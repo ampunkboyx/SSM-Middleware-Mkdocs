@@ -1,0 +1,53 @@
+site_name: SSM Middleware Doc
+site_url: null
+
+nav:
+  - Introduction : 'index.md'
+  - Getting Started: 'markdownFile/GettingStarted.md'
+  - 'How to call API': 
+        - 'Token Authentication': 'markdownFile/TokenAuthentication.md'
+        - 'WSDL File': 
+            - 'Sample Request': 'markdownFile/sampleRequest.md'
+            - 'Sample Respond': 'markdownFile/sampleResponse.md'
+  - 'Profile Webservice': 
+        - 'GetInfoByDateRange': 
+            - 'ROB': 
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md'
+            - 'ROC':
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md'
+            - 'getCompProfile': 
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md'
+            - 'getBizProfile': 
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md' 
+        - 'Other Webservice in InfoListing': ''
+        - 'Internal Webservice': '' 
+  - 'Data Schema':
+        - 'ROB': ''
+        - 'ROC': ''
+
+theme:
+    # name: windmill-dark
+    name: mkdocs
+
+
+    
+
+
+plugins:
+    - search
+
+# extra_css:
+#     - css/extra.css
+
