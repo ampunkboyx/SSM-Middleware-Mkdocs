@@ -40,9 +40,11 @@ nav:
 theme:
     # name: windmill-dark
     name: mkdocs
+    text-align: justify
 
 
-    
+extra_css:
+    - css/extra.css
 
 
 plugins:
