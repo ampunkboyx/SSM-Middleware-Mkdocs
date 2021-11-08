@@ -49,7 +49,3 @@ extra_css:
 
 plugins:
     - search
-
-# extra_css:
-#     - css/extra.css
-
