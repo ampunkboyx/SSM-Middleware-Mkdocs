@@ -1,4 +1,4 @@
-/* To design Heading 1*/
+/* First Heading 1 will be centered */
 div.col-md-9 h1:first-of-type {
     text-align: center;
     font-size: 60px;
@@ -13,6 +13,12 @@ div.col-md-9>p {
 div.col-md-9 h4 {
     text-align: center;
     font-size: 15px;
+    font-weight: 300;
+}
+
+div.col-md-9 h2 {
+    text-align: left;
+    font-size: 25px;
     font-weight: 300;
 }
 
