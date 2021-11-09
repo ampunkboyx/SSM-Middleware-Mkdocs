@@ -20,6 +20,44 @@
 
 
 ## Tutorial Video
-<iframe width="680" height="664" src="https://www.youtube.com/embed/1gWqVmXqog4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="680" height="664" src="https://www.youtube.com/embed/1gWqVmXqog4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>+
+
+- 'Profile Webservice': 
+        - 'getInfoProfile': ''
+        - 'getCompProfile': '' 
+        - 'getBizProfile': ''
+        - 'getNewFormatEntityNo. ': ''
+        - 'Sample Report':
+            - 'ROB': ''
+            - 'ROC': ''
+        - 'Data Mapping' :
+            - 'ROB': ''
+            - 'ROC': ''
+            - 'LLP': ''
+
+- 'Profile Webservice': 
+        - 'GetInfoByDateRange': 
+            - 'ROB': 
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md'
+            - 'ROC':
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md'
+            - 'getCompProfile': 
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md'
+            - 'getBizProfile': 
+                - 'Sample Request': 'markdownFile/sampleRequest.md'
+                - 'How to read sample request': 'markdownFile/sampleRequest.md'
+                - 'Sample Respond': 'markdownFile/sampleResponse.md'
+                - 'How to read sample respond': 'markdownFile/sampleResponse.md' 
+        - 'Other Webservice in InfoListing': ''
+        - 'Internal Webservice': ''
 
 
