@@ -6,7 +6,4 @@ The latest SSM Middleware System is an enterprise application integration system
 ##
 SSM Middleware System includes a Middleware gateway for managing agency profiles, service catalogues, service subscriptions, price configuration, home publishing and subscriptions, and reporting. It is intended for internal usage by SSM in managing services and subscribers. The usage of a Java Enterprise platform enabled this extraordinary achievement. 
 ##
-However, for self-registration and self-service subscriptions, the current Middleware Portal was not made available to agencies/agents. It also prevents registered users from purchasing SSM products online. 
-In the interest of pursuing a longer and better business partnership with SSM, we submit this proposal on evolving Middleware into a true enterprise system. Through an estimated 6-monthsproject, the SSM Middleware System will be significantly enhanced to overcome the limitations that it currently faces. 
-##
-This proposal will explain the reasons for the enhancement, the approach that we take, the scope of work, and the financial investment for SSM consideration. Mesiniaga has proven to be a reliable partner in supporting the systems that we have delivered to SSM. We hope you take into consideration our track record with you and agree with the benefits of our proposal.
+[Getting Started](markdownFile/GettingStarted.md)

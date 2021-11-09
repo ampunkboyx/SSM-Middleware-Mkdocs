@@ -5,7 +5,7 @@ nav:
   - Introduction : 'index.md'
   - Getting Started: 'markdownFile/GettingStarted.md'
   - 'How to call API': 
-        - 'Token Authentication': 'markdownFile/TokenAuthentication.md'
+        - 'Token Authentication': 'example.md'
         - 'WSDL File': 
             - 'Sample Request': 'markdownFile/sampleRequest.md'
             - 'Sample Respond': 'markdownFile/sampleResponse.md'
@@ -40,7 +40,7 @@ nav:
 theme:
     # name: windmill-dark
     name: mkdocs
-    text-align: justify
+
 
 
 extra_css:
@@ -49,3 +49,7 @@ extra_css:
 
 plugins:
     - search
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
