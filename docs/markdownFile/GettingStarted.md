@@ -174,3 +174,169 @@ Error Response Message
     </soapenv:Body>
 </soapenv:Envelope>
 ```
+#
+### **Message Header Fields**
+
+<table>
+    <thead>
+        <tr>
+            <th colspan=5>Request Header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td>Name</td>
+            <td>Type</td>
+            <td>Length</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>VersionNumber</td>
+            <td>CHAR</td>
+            <td>3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>serviceCode</td>
+            <td>CHAR</td>
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>customerID</td>
+            <td>CHAR</td>
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>customerReferenceNo</td>
+            <td>CHAR</td>
+            <td>40</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>customerRequestDate</td>
+            <td>CHAR</td>
+            <td></td>
+            <td>yyyy'-'MM'-'dd'T'hh':'mm':'ss'.'SSS</td>
+        </tr>
+    </tbody>
+</table>
+
+---
+#
+
+<table>
+    <thead>
+        <tr>
+            <th colspan=5>ResponeHeader</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td>Name</td>
+            <td>Type</td>
+            <td>Length</td>
+            <td>Remarks</td>
+        </tr>
+        <tr>
+            <td>1-5</td>
+            <td>Fields 1-5 will repeat from request</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>serverHost</td>
+            <td>CHAR</td>
+            <td>30</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>requestTimestamp</td>
+            <td>CHAR</td>
+            <td></td>
+            <td>yyyy'-'MM'-'dd'T'hh':'mm':'ss'.'SSS</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>responseTimestamp</td>
+            <td>CHAR</td>
+            <td></td>
+            <td>yyyy'-'MM'-'dd'T'hh':'mm':'ss'.'SSS</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>recordCount</td>
+            <td>INT</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>errorCode</td>
+            <td>CHAR</td>
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>errorMessage</td>
+            <td>CHAR</td>
+            <td>100</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>hostErrorCode</td>
+            <td>CHAR</td>
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>hostErrorMessage</td>
+            <td>CHAR</td>
+            <td>100</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+# 4. HTTP Header - Token Authentication
+
+A  method  for  a  Service  Requestor  to  provide  a  user  name  and  timestamp  when  making  a  service request to Middleware. When a Service Provider wants to send the server authentication credentials it may use the Authorization field. Authorization field will be put on the Header of request.
+#
+Token Authentication have two step to produce Authorization field.<br>
+**A. The digest is constructed as follows:**<br>
+
+ 1. The username, timestamp and password are combined with a vertical bar. Because timestamp will be included on the concatString = username|timestamp|password
+
+ 2. The resulting string is hashed using SHA256.hashByte = SHA256(concatString)
+
+ Example:
+
+ 1. Username: Tester, timestamp: 2016-05-31 11:39:35, digest: AAmsv8KNchbMY4GHViINjp/B4OVraiEdUZccaojqGhA=Tester|2016-05-31 11:39:35|AAmsv8KNchbMY4GHViINjp/B4OVraiEdUZccaojqGhA=
+
+ 2. Base64.encode(username|timestamp|digest) VGVzdGVyfDIwMTYtMDUtMzEgMTE6Mzk6MzV8QUFtc3Y4S05jaGJNWTRHSFZpSU5qcC9CNE9WcmFpRWRVWmNjYW9qcUdoQT0=
+
+ 3. Authorization: VGVzdGVyfDIwMTYtMDUtMzEgMTE6Mzk6MzV8QUFtc3Y4S05jaGJNWTRHSFZpSU5qcC9CNE9WcmFpRWRVWmNjYW9qcUdoQT0=
+
+## 4.1 Java library for generating username token 
+#### ![](src/java version dot zip.png)
+
+## 4.2 .NET library for generating username token
+#### ![](src/AuthToken.NET.png)
+
+# 5. Transport Protocol - HTTPS
+
+HTTPS  is  a protocol for secure communication  over  a computer  network which  is  widely  used  on  the Internet.   HTTPS   consists   of   communication   over Hypertext   Transfer   Protocol (HTTP)   within   a   connection encrypted by [Transport Layer Security or its predecessor](https://en.wikipedia.org/wiki/Transport_Layer_Security), Secure Sockets Layer. The main motivation for HTTPS is [authentication](https://en.wikipedia.org/wiki/Authentication) of the  visited website and protection of the privacy and integrity of the exchanged data. [1] 
