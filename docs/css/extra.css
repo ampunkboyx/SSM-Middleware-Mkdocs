@@ -28,6 +28,19 @@ div.col-md-9 h3 {
     font-weight: 300;
 }
 
+div.col-md-8 {
+    width: 120px;
+    min-height: 120px;
+    max-height: auto;
+    float: left;
+    margin: 3px;
+    padding: 3px
+}
+
+iframe {
+    max-width: 1000%;
+    height: auto;
+}
 
 
 
