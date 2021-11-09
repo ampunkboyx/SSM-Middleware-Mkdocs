@@ -24,6 +24,7 @@ nav:
   - 'Data Schema':
         - 'ROB': 'Data Schema/DataSchemaROB.md'
         - 'ROC': 'Data Schema/DataSchemaROC.md'
+  - 'PDF': 'PDF/pdf.md' 
 theme:
     # name: windmill-dark
     name: mkdocs
