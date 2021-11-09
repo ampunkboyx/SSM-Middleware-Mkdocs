@@ -4,6 +4,6 @@
 
 <!-- <iframe id="" src="src/example.pdf"></iframe> -->
 ## <iframe id="" src="https://www.orimi.com/pdf-test.pdf"height="900%" width="100%"></iframe>
-## <iframe id="" src="https://github.com/ampunkboyx/SSM-Middleware-Mkdocs/blob/main/docs/How%20To%20Call%20API/Token%20Authentication/src/example.pdf"height="900%" width="100%"></iframe>
+
 
 
