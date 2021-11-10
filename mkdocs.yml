@@ -30,6 +30,7 @@ nav:
 theme:
     # name: windmill-dark
     name: mkdocs
+    # name: readthedocs
 
 
 
