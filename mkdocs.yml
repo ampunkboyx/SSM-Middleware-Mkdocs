@@ -6,9 +6,7 @@ nav:
   - Getting Started: 'Documents/GettingStarted/GettingStarted.md'
   - 'How to call API': 
         - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
-        - 'WSDL File': 
-            - 'Sample Request': 'Documents/How To Call API/WSDL File/sampleRequest.md'
-            - 'Sample Respond': 'Documents/How To Call API/WSDL File/sampleResponse.md'
+        - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
   - 'Profile Webservice': 
         - 'getInfoProfile': 
             - 'ROCINFO': 'Documents/Profile Webservice/getInfoProfile/getInfoProfileROC.md'
@@ -20,13 +18,13 @@ nav:
             - 'ROB': 'Documents/Profile Webservice/Sample Report/ROB/SampleReportROB.md'
             - 'ROC': 'Documents/Profile Webservice/Sample Report/ROC/SampleReportROC.md'
         - 'Data Mapping' :
-            - 'ROB': 'Documents/Profile Webservice/Data Mapping/ROC/DataMappingROB.md'
-            - 'ROC': 'Documents/Profile Webservice/Data Mapping/ROB/DataMappingROC.md'
+            - 'ROB': 'Documents/Profile Webservice/Data Mapping/ROB/DataMappingROB.md'
+            - 'ROC': 'Documents/Profile Webservice/Data Mapping/ROC/DataMappingROC.md'
             - 'LLP': 'Documents/Profile Webservice/Data Mapping/LLP/DataMappingLLP.md' 
   - 'Data Schema':
         - 'ROB': 'Documents/Data Schema/DataSchemaROB.md'
         - 'ROC': 'Documents/Data Schema/DataSchemaROC.md'
-        
+
 theme:
     # name: windmill-dark
     name: mkdocs
