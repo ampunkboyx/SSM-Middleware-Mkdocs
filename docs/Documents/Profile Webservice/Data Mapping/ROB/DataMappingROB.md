@@ -1,7 +1,8 @@
 # DATA MAPPING ROB
 ## BUSINESS PROFILE
 	Service	getBizProfile
-PDF TEMPLATE		
+PDF TEMPLATE	
+## Page 1	
 <style type="text/css">
 	table.tableizer-table {
 		font-size: 12px;
@@ -20,7 +21,7 @@ PDF TEMPLATE
 	}
 </style>
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>TITLE :</th><th>Business information (ENG)</th><th>Maklumat Perniagaan(Malay)</th><th>&nbsp;</th><th>&nbsp;</th><th>Page 1</th><th>&nbsp;</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th>TITLE :</th><th>Business information (ENG)</th><th clos>Maklumat Perniagaan(Malay)</th><th>&nbsp;</th><th>&nbsp;</th><th>Page 1</th><th>&nbsp;</th></tr></thead><tbody>
  <tr><td>Column Name(English)</td><td>Column Name(MALAY)</td><td>&nbsp;</td><td>Remarks</td><td>json Node / Middleware</td><td>Object Name</td><td>&nbsp;</td></tr>
  <tr><td>Business Name</td><td>NAMA PERNIAGAAN</td><td>&nbsp;</td><td>&nbsp;</td><td>registrationName</td><td>robBusinessInfo</td><td>&nbsp;</td></tr>
  <tr><td>Business Registrations No</td><td>NO.PENDAFTARAN PERNIAGAAN</td><td>&nbsp;</td><td>200803090077<br>(SA0085324-V)</td><td>registrationNo<br>checkDigit</td><td>robBusinessInfo</td><td>&nbsp;</td></tr>
@@ -42,3 +43,21 @@ PDF TEMPLATE
  <tr><td>LLP NUMBER</td><td>NOMBOR PLT</td><td>&nbsp;</td><td>* need to view if status is B- Conversion to LLP</td><td>llpNo</td><td>robBusinessInfo</td><td>* Tiada Dalam Sijil</td></tr>
  <tr><td>CONVERSION DATE</td><td>TARIKH PERTUKARAN</td><td>&nbsp;</td><td>* need to view if status is B- Conversion to LLP</td><td>llpconvertDate</td><td>robBusinessInfo</td><td>* Tiada Dalam Sijil</td></tr>
 </tbody></table>
+
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>TITLE :</th><th>Business Type (eng)</th><th>JENIS PERNIAGAAN(MALAY)</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody>
+ <tr><td>Column Name(English)</td><td>Column Name(MALAY)</td><td>&nbsp;</td><td>Remarks</td><td>json Node</td><td>Object Name</td></tr>
+ <tr><td>Business Type</td><td>JENIS PERNIAGAAN</td><td>&nbsp;</td><td>&nbsp;</td><td>description</td><td>robBusinessInfo</td></tr>
+</tbody></table>
+
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>TITLE:</th><th>Branch information(eng)</th><th>MAKLUMAT CAWANGAN(MALAY)</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody>
+ <tr><td>Column Name(English)</td><td>Column Name(MALAY)</td><td>&nbsp;</td><td>Remarks</td><td>json Node</td><td>Object Name</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>No Column name. base on pdf design just List the branch address accordingly. </td><td>address1</td><td>robBranchListInfo</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>town</td><td>robBranchListInfo</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>postcode</td><td>robBranchListInfo</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>state</td><td>robBranchListInfo</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>status</td><td>robBranchListInfo</td></tr>
+</tbody></table>
+
+## Page 2
