@@ -2,7 +2,7 @@
 ## BUSINESS PROFILE
 	Service	getBizProfile
 PDF TEMPLATE	
-## Page 1	
+## Business Information(ENG)/Maklumat Perniagaan(Malay)	
 <style type="text/css">
 	table.tableizer-table {
 		font-size: 9px;
@@ -23,23 +23,16 @@ PDF TEMPLATE
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE :</th>
-			<th colspan=2>Business information (ENG)</th>
-			<th colspan=2>Maklumat Perniagaan(Malay)</th>
-			<th>Page 1</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>&nbsp;</th>
+			<th>Remarks</th>
+			<th>json Node / Middleware</th>
+			<th>Object Name</th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>&nbsp;</td>
-			<td>Remarks</td>
-			<td>json Node / Middleware</td>
-			<td>Object Name</td>
-			<td>&nbsp;</td>
-		</tr>
 		<tr>
 			<td>Business Name</td>
 			<td>NAMA PERNIAGAAN</td>

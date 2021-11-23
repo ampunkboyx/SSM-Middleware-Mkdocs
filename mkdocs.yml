@@ -1,10 +1,9 @@
 site_name: SSM Middleware Doc
-site_url: null
 
 nav:
   - 'Menu' : 
-        - 'Introduction' : 'index.md'
-        - 'Getting Started': 'Documents/GettingStarted/GettingStarted.md'
+        - 'Introduction' : /
+        - 'Getting Started': /Documents/GettingStarted/GettingStarted/
         - 'How to call API': 
             - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
             - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
