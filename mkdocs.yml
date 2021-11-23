@@ -2,6 +2,7 @@ site_name: SSM Middleware Doc
 
 nav:
   - 'Menu' : 
+        - 'Try' : 'Documents\SSMstg.md'
         - 'Introduction' : /
         - 'Getting Started': /Documents/GettingStarted/GettingStarted/
         - 'How to call API': 
