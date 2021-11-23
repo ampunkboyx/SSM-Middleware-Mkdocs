@@ -18,35 +18,26 @@
 # DATA MAPPING ROC
 
 
-## COMPANY PROFILE
+## **COMPANY PROFILE**
 
-## Page 1
+## Company information (ENG)
+MAKLUMAT SYARIKAT(Malay)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE :</th>
-			<th colspan=2>Company information (ENG)</th>
-			<th colspan=2>MAKLUMAT SYARIKAT(Malay)</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
+			<th>Webservice</th>
+			<th>json Node / Parameter</th>
+			<th>Object Name</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>Sample Data</td>
-			<td>Remarks</td>
-			<td>Webservice</td>
-			<td>json Node / Parameter</td>
-			<td>Object Name</td>
-			<td>Sdn Bhd</td>
-			<td>CLBG</td>
-			<td>Foreign</td>
-		</tr>
 		<tr>
 			<td>Company Name</td>
 			<td>Nama Syarikat</td>
@@ -475,19 +466,21 @@
 	</tbody>
 </table>
 
-## Page 2
-
+## Summary of Share Capital(ENG)
+Maklumat Modal(MALAY)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th colspan=2>Summary of Share Capital(eng)</th>
-			<th colspan=2>Maklumat Modal(MALAY)</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
 			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>json Node</th>
+			<th>Object Name</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -818,34 +811,24 @@
 	</tbody>
 </table>
 
-## Page 3
-
+## Directors/Officers(ENG)
+MAKLUMAT PENGARAH DAN PEGAWAI(Malay)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th colspan=2>Directors/Officers(eng)</th>
-			<th colspan=2>MAKLUMAT PENGARAH DAN PEGAWAI(MALAY)</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
+			<th>Webservice</th>
+			<th>json Node</th>
+			<th>Object Name</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>Sample Data</td>
-			<td>Remarks</td>
-			<td>Webservice</td>
-			<td>json Node</td>
-			<td>Object Name</td>
-			<td>Sdn Bhd</td>
-			<td>CLBG</td>
-			<td>Foreign</td>
-		</tr>
 		<tr>
 			<td>Company Name</td>
 			<td>Nama Syarikat</td>
@@ -1029,33 +1012,24 @@
 	</tbody>
 </table>
 
-## Page 4
+## Shareholder/Members(ENG)
+MAKLUMAT PEMEGANG SYER(Malay)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th colspan=2>Shareholder/Members(eng)</th>
-			<th colspan=2>MAKLUMAT PEMEGANG SYER(MALAY)</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
 			<th>&nbsp;</th>
+			<th>json Node</th>
 			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>Sample Data</td>
-			<td>Remarks</td>
-			<td>&nbsp;</td>
-			<td>json Node</td>
-			<td>&nbsp;</td>
-			<td>Sdn Bhd</td>
-			<td>CLBG</td>
-			<td>Foreign</td>
-		</tr>
 		<tr>
 			<td>Company Name</td>
 			<td>Nama Syarikat</td>
@@ -1155,34 +1129,24 @@
 	</tbody>
 </table>
 
-## Page 5
-
+## Company Charges(ENG)
+MAKLUMAT GADAIAN(Malay)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th colspan=2>Company Charges(eng)</th>
-			<th colspan=2>MAKLUMAT GADAIAN(MALAY)</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
 			<th>&nbsp;</th>
+			<th>json Node</th>
 			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>Sample Data</td>
-			<td>Remarks</td>
-			<td>&nbsp;</td>
-			<td>json Node</td>
-			<td>&nbsp;</td>
-			<td>Sdn Bhd</td>
-			<td>CLBG</td>
-			<td>Foreign</td>
-		</tr>
 		<tr>
 			<td>Company Name</td>
 			<td>Nama Syarikat</td>
@@ -1306,36 +1270,24 @@
 	</tbody>
 </table>
 
-## Page 6
-
+## Summary of Financial Information(ENG)
+RINGKASAN PENYATA KEWANGAN(Malay)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th>Summary of Financial Information(eng)</th>
-			<th>RINGKASAN PENYATA KEWANGAN(MALAY)</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
 			<th>&nbsp;</th>
+			<th>json Node</th>
 			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>Sample Data</td>
-			<td>Remarks</td>
-			<td>&nbsp;</td>
-			<td>json Node</td>
-			<td>&nbsp;</td>
-			<td>Sdn Bhd</td>
-			<td>CLBG</td>
-			<td>Foreign</td>
-		</tr>
 		<tr>
 			<td>Company Name</td>
 			<td>&nbsp;</td>
