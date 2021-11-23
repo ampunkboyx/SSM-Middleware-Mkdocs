@@ -27,23 +27,7 @@ div.col-md-9 h3 {
     font-size: 50px;
     font-weight: 300;
 }
-/* all this below is for table design */
-table.tableizer-table {
-    font-size: 12px;
-    border: 1px solid #CCC; 
-    font-family: Arial, Helvetica, sans-serif;
-} 
 
-.tableizer-table td {
-    padding: 4px;
-    margin: 3px;
-    border: 1px solid #CCC;
-}
-.tableizer-table th {
-    background-color: #104E8B; 
-    color: #FFF;
-    font-weight: bold;
-}
 
 
 
