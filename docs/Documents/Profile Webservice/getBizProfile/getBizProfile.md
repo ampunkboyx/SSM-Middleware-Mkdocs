@@ -7,7 +7,7 @@ modified: '2021-07-14T02:55:28.720Z'
 
 # ROB Request Respond, Data Mapping, and Issues
 
-# getBizProfile & getInfoProfile
+## getBizProfile & getInfoProfile
 In pursuant of ROBA Act 1956, any business conducted in Malaysia must be registered. The APIs provide the information about registration of business entity in Malaysia. 
 
 ## How to write message request
@@ -24,7 +24,7 @@ Please put your agent code.
 ~~~~~~
 
 ~~~~~~
-### Good Message Request
+## Good Message Request
 This is the sample of a good message request
 ~~~~~~
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://integrasistg.ssm.com.my/InfoService/1/WS">
@@ -69,7 +69,7 @@ This is the sample of a good message request
 </soapenv:Envelope>
 ~~~~~~
 
-### Good Message Response
+## Good Message Response
 This is the sample of a good message response
 ~~~~~~
 <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
@@ -214,7 +214,7 @@ This is the sample of a good message response
 ## Understanding the biz owner ID number
 
 
-### Two IC number, both old and new
+## Two IC number, both old and new
 
 * Some of the owner carries two IC numbers which are both old and new
 * The new IC number is stored in newIcNo
@@ -231,7 +231,7 @@ Sample ROB number
 <newIcNo>590204045159</newIcNo>
 ~~~~~~
 
-### New IC number 
+## New IC number 
 
 Most of business owner carries only one type of IC, which is new IC number.
 * idCardType is always K,
@@ -253,10 +253,10 @@ Sample Rob Number
 <ownerName>NORSHAFIZAN BINTI ENDOT</ownerName>
 ~~~~~~
 
-### Recommendation
+## Recommendation
 
 It is our recommendation to check newIcNo for ID number, if there's no newIcNo then check idCardNumber and refer to idCardType for ID number. 
 
 
-### Rare Cases of ROB 
+## Rare Cases of ROB 
 

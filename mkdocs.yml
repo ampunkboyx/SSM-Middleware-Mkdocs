@@ -5,6 +5,7 @@ nav:
         - 'Try' : 'Documents\SSMstg.md'
         - 'Introduction' : /
         - 'Getting Started': /Documents/GettingStarted/GettingStarted/
+        - 'Getting Started': /Documents/GettingStarted/testing/
         - 'How to call API': 
             - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
             - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
