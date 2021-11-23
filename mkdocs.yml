@@ -2,11 +2,19 @@ site_name: SSM Middleware Doc
 site_url: null
 
 nav:
-  - Introduction : 'index.md'
-  - Getting Started: 'Documents/GettingStarted/GettingStarted.md'
-  - 'How to call API': 
-        - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
-        - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
+  - 'Menu' : 
+        - 'Introduction' : 'index.md'
+        - 'Getting Started': 'Documents/GettingStarted/GettingStarted.md'
+        - 'How to call API': 
+            - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
+            - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
+
+#   - Introduction : 'index.md'
+#   - Getting Started: 'Documents/GettingStarted/GettingStarted.md'
+#   - 'How to call API': 
+#         - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
+#         - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
+
   - 'Profile Webservice': 
         - 'getInfoProfile': 
             - 'ROCINFO': 'Documents/Profile Webservice/getInfoProfile/getInfoProfileROC.md'
