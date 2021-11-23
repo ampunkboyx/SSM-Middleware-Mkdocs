@@ -1,10 +1,3 @@
-# DATA MAPPING ROC
-
-
-## COMPANY PROFILE
-
-## Page 1
-
 <style type="text/css">
 	table.tableizer-table {
 		font-size: 12px;
@@ -22,6 +15,12 @@
 		font-weight: bold;
 	}
 </style>
+# DATA MAPPING ROC
+
+
+## COMPANY PROFILE
+
+## Page 1
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>TITLE :</th><th>Company information  (ENG)</th><th>MAKLUMAT SYARIKAT(Malay)</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody>
  <tr><td>Column Name(English)</td><td>Column Name(MALAY)</td><td>Sample Data</td><td>Remarks</td><td>Webservice</td><td>json Node / Parameter</td><td>Object Name</td><td>Sdn Bhd</td><td>CLBG</td><td>Foreign</td></tr>
@@ -34,8 +33,8 @@
  <tr><td>Check Digit</td><td>&nbsp;</td><td>&nbsp;</td><td>T</td><td>GetCompProfile</td><td>&nbsp;</td><td>&nbsp;</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
  <tr><td>Incorporation Date</td><td>Tarikh Penubuhan</td><td>&nbsp;</td><td>&nbsp;</td><td>GetCompProfile</td><td>incorpDate</td><td>rocCompanyInfo</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
  <tr><td>Registration Date</td><td>Tarikh Pendaftaran</td><td>&nbsp;</td><td>&nbsp;</td><td>GetCompProfile</td><td>registrationDate</td><td>rocCompanyInfo</td><td>No</td><td>No</td><td>Yes</td></tr>
-
 </tbody></table>
+
 ## Page 2
 ## Page 3
 ## Page 4

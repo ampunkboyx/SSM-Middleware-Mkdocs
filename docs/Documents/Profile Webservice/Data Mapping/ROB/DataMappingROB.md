@@ -102,10 +102,20 @@ PDF TEMPLATE
  <tr><td>DATE OF BIRTH</td><td>TARIKH LAHIR</td><td>&nbsp;</td><td>&nbsp;</td><td>dob</td><td>robOwnerShipInfos</td></tr>
  <tr><td>RACE</td><td>BANGSA</td><td>&nbsp;</td><td>&nbsp;</td><td>race</td><td>robOwnerShipInfos</td></tr>
  <tr><td>GENDER</td><td>JANTINA</td><td>&nbsp;</td><td>&nbsp;</td><td>gender</td><td>robOwnerShipInfos</td></tr>
- <tr><td>NATIONALITY</td><td>KEWARGANEGARAAN</td><td>&nbsp;</td><td>&nbsp;</td><td>nationality</td><td>robOwnerShipInfos</td></tr>
+ <tr><td>NATIONALITY</td><td>KEWARGANEGARAAN</td><td>&nbsp;</td><td>REFER parameter ROB lookup.
+English
+select vchdescription where vchparametertype='ROBCitizenship' and vchcode='MAL'
+
+MALAY
+select vchdescription where vchparametertype='ROBCitizenshipMalay' and vchcode='MAL'</td><td>nationality</td><td>robOwnerShipInfos</td></tr>
  <tr><td>DATE JOIN</td><td>TARIKH MASUK</td><td>&nbsp;</td><td>&nbsp;</td><td>createDate</td><td>robOwnerShipInfos</td></tr>
  <tr><td>DATE OF WITHDRAWAL</td><td>TARIKH KELUAR</td><td>&nbsp;</td><td>&nbsp;</td><td>updateDate</td><td>robOwnerShipInfos</td></tr>
- <tr><td>REASON OF WITHDRAWAL</td><td>SEBAB KELUAR</td><td>&nbsp;</td><td>&nbsp;</td><td>ammendmentType</td><td>robOwnerShipInfos</td></tr>
+ <tr><td>REASON OF WITHDRAWAL</td><td>SEBAB KELUAR</td><td>&nbsp;</td><td>Refer to parameterROB.csv 
+Sql (English) :
+select vchdescription where vchparametertype='ROBB4Amend' and vchcode='D'
+
+Sql (Malay) :
+select vchdescription where vchparametertype='ROBB4AmendMalay' and vchcode='D'</td><td>ammendmentType</td><td>robOwnerShipInfos</td></tr>
 </tbody></table>
 
 <table class="tableizer-table">
