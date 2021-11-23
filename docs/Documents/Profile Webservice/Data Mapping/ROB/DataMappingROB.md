@@ -2,7 +2,8 @@
 ## BUSINESS PROFILE
 	Service	getBizProfile
 PDF TEMPLATE	
-## Business Information(ENG)/Maklumat Perniagaan(Malay)	
+## Business Information(ENG)
+Maklumat Perniagaan(Malay)	
 <style type="text/css">
 	table.tableizer-table {
 		font-size: 9px;
@@ -305,24 +306,20 @@ PDF TEMPLATE
 	</tbody>
 </table>
 
-## Page 2
+## Information of Current Owner(ENG)
+MAKLUMAT PEMILIK PERNIAGAAN TERKINI(Malay)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th colspan=3>TITLE: Information of current owner(eng)</th>
-			<th colspan=2>MAKLUMAT PEMILIK PERNIAGAAN TERKINI(MALAY)</th>
-			<th>Page: 2</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>&nbsp;</th>
+			<th>Remarks</th>
+			<th>json Node</th>
+			<th>Object Name</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>&nbsp;</td>
-			<td>Remarks</td>
-			<td>json Node</td>
-			<td>Object Name</td>
-		</tr>
 		<tr>
 			<td>Business Name</td>
 			<td>NAMA PERNIAGAAN</td>
@@ -463,24 +460,20 @@ PDF TEMPLATE
 	</tbody>
 </table>
 
-## Page 3
+## Information of Previous Owner(ENG)
+MAKLUMAT PEMILIK PERNIAGAAN TERDAHULU(Malay)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th colspan=3>TITLE: Information of previous owner(eng)</th>
-			<th colspan=2>MAKLUMAT PEMILIK PERNIAGAAN TERDAHULU(MALAY)</th>
-			<th>Page 3</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>&nbsp;</th>
+			<th>Remarks</th>
+			<th>json Node</th>
+			<th>Object Name</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>&nbsp;</td>
-			<td>Remarks</td>
-			<td>json Node</td>
-			<td>Object Name</td>
-		</tr>
 		<tr>
 			<td>Business Name</td>
 			<td>NAMA PERNIAGAAN</td>
