@@ -5,7 +5,7 @@ PDF TEMPLATE
 ## Page 1	
 <style type="text/css">
 	table.tableizer-table {
-		font-size: 12px;
+		font-size: 9px;
 		border: 1px solid #CCC; 
 		font-family: Arial, Helvetica, sans-serif;
 	} 
@@ -24,10 +24,8 @@ PDF TEMPLATE
 	<thead>
 		<tr class="tableizer-firstrow">
 			<th>TITLE :</th>
-			<th>Business information (ENG)</th>
-			<th clos>Maklumat Perniagaan(Malay)</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th colspan=2>Business information (ENG)</th>
+			<th colspan=2>Maklumat Perniagaan(Malay)</th>
 			<th>Page 1</th>
 			<th>&nbsp;</th>
 		</tr>
@@ -229,10 +227,8 @@ PDF TEMPLATE
 	<thead>
 		<tr class="tableizer-firstrow">
 			<th>TITLE :</th>
-			<th>Business Type (eng)</th>
-			<th>JENIS PERNIAGAAN(MALAY)</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th colspan=2>Business Type (eng)</th>
+			<th colspan=2>JENIS PERNIAGAAN(MALAY)</th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
@@ -259,10 +255,8 @@ PDF TEMPLATE
 	<thead>
 		<tr class="tableizer-firstrow">
 			<th>TITLE:</th>
-			<th>Branch information(eng)</th>
-			<th>MAKLUMAT CAWANGAN(MALAY)</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th colspan=2>Branch information(eng)</th>
+			<th colspan=2>MAKLUMAT CAWANGAN(MALAY)</th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
@@ -322,12 +316,9 @@ PDF TEMPLATE
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th>Information of current owner(eng)</th>
-			<th>MAKLUMAT PEMILIK PERNIAGAAN TERKINI(MALAY)</th>
-			<th>&nbsp;</th>
-			<th>Page:</th>
-			<th>2</th>
+			<th colspan=3>TITLE: Information of current owner(eng)</th>
+			<th colspan=2>MAKLUMAT PEMILIK PERNIAGAAN TERKINI(MALAY)</th>
+			<th>Page: 2</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -483,11 +474,8 @@ PDF TEMPLATE
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th>Information of previous owner(eng)</th>
-			<th>MAKLUMAT PEMILIK PERNIAGAAN TERDAHULU(MALAY)</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th colspan=3>TITLE: Information of previous owner(eng)</th>
+			<th colspan=2>MAKLUMAT PEMILIK PERNIAGAAN TERDAHULU(MALAY)</th>
 			<th>Page 3</th>
 		</tr>
 	</thead>
@@ -660,11 +648,7 @@ PDF TEMPLATE
 	<thead>
 		<tr class="tableizer-firstrow">
 			<th>Stamp</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>For document with ctc</th>
+			<th colspan=5>For document with ctc</th>
 		</tr>
 	</thead>
 	<tbody>
