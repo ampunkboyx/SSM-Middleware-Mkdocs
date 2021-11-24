@@ -1,8 +1,8 @@
 # Getting Started
 
-# 1. Glosary
+## 1. Glosary
 The following specify terms and abbreviations used in this document and their definitions that are needed to understand this document.
-#
+
 
 Abbreviations |  Definition
 :------------ | -------------
@@ -17,13 +17,14 @@ Base64 | A group of similar binary-to-text encoding schemes that represent binar
 
 #### Table 1 : Glossary Table
 
-# 2. SSM Middleware
+## 2. SSM Middleware
 This  document  describes  the  interface  standard  for  integrating  to  SSM  Middleware.  It  covers  the  transport protocol, web service standard and subscription requirement. As illustrstrated below, there are   few   security   configurations   and   settings   need   to   be implemented   to   ensure   secure   communication between servie requestor and service provider. 
-#
 
-#### ![](src/Figure 1.png)
+![](src/Figure 1.png){ loading=lazy }
+
 
 ## 2.1 What needs to be done for connecting to SSM Middleware
+
 |  |  | Example |
 | ------------ | ------------- | ------------ |
 | 1 | Service Requestor (i.e. Agency) need an account in Middleware System. <br>Please refer to [3.1](#31-agency-profile)| Liaosn with SSM Business Development team to have an account in the SSM Middleware. Login credential, username & password, will be sent to respective Service Requestor once the service requestor account is created.  | 
@@ -32,9 +33,9 @@ This  document  describes  the  interface  standard  for  integrating  to  SSM  
 | 4|  Service Requestor application requires to connect SSM Middleware through HTTPS.  | HTTPS will be implemented in SSM Middleware. |
 
 ---
-# 3. Subscription Process
+## 3. Subscription Process
 
-#### ![](src/Figure 2.png)
+![](src/Figure 2.png)
 
 * Each Service Requestor / Agency is required to register an account in SSM Middleware before it can connect to Middleware.
 * Username and password will be sent to Service Requestor via email once the account is created.
@@ -47,47 +48,46 @@ This  document  describes  the  interface  standard  for  integrating  to  SSM  
 a. SSM MBDD need to create an account in Middleware for agency.<br>
 b. Once agency profile is created, a notification email will be sent to the agency.<br>
 c. Email content include the admin user details.<br>
-#### ![](src/UserID.png)
-d. After that, you can use username and password to login the system.
-#### ![](src/login.png)
-e. Once login success will go to landing page.
-#### ![](src/landingPage.png)
+![](src/UserID.png)<br>
+d. After that, you can use username and password to login the system.<br>
+![](src/login.png)<br>
+e. Once login success will go to landing page.<br>
+![](src/landingPage.png)
 
 ## 3.2 Service Catalog – Service Subscription
 
-a. Login into the  system
-#### ![](src/login.png)
+a. Login into the  system<br>
+![](src/login.png)<br>
 
-b. Select the Subscription screen
-#### ![](src/SubscriptionScreen.png)
+b. Select the Subscription screen<br>
+![](src/SubscriptionScreen.png)<br>
 
-c. Subscription New Service
-#### ![](src/SubscriptionSservice.png)
+c. Subscription New Service<br>
+![](src/SubscriptionService.png)<br>
 
-d. Select the service category to subscribe
-#### ![](src/ServiceCatalog.png)
+d. Select the service category to subscribe<br>
+![](src/ServiceCatalog.png)
 
 e. Once confirm click on the “save” button
 
-#### ![](src/ConfirmationPage.png)
+![](src/ConfirmationPage.png)
 
 f. After click subscribe button will pending SSM approval to approve it.<br>
 g. Receive email when the service category approved.<br>
-#### ![](src/ApprovedEmail.png)
+![](src/ApprovedEmail.png)
 
 ## 3.3 ENDPOINT URL
-You can view the endpoint URLs for your subscribed service catalogs in the integrasi portal. They look similar to the samples below.<br>
+You can view the endpoint URLs for your subscribed service catalogs in the integrasi portal. They look similar to the samples below.<br><br>
 Production URL:<br>
-https://integrasi.ssm.com.my/{Service Catalog Name}/{version no}<br>
+https://integrasi.ssm.com.my/{Service Catalog Name}/{version no}<br><br>
 Testing URL:<br>
-https://integrasi.ssm.com.my/testing/{Service Catalog Name}/{version no}<br>
+https://integrasi.ssm.com.my/testing/{Service Catalog Name}/{version no}<br><br>
 Example:<br>
 https://integrasi.ssm.com.my/BusinessService/1
 
 ## 3.4 Message Format
 
-Sample Request Message<br>
-```
+``` xml title="Sample Request Message"
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
     <soapenv:Header/>
     <soapenv:Body>
@@ -105,8 +105,7 @@ Sample Request Message<br>
     </soapEnv:Body>
 </soapEnv:Envelope>
 ```
-Good Response Message
-```
+``` xml title="Good Response Message"
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
     <soapenv:Header/>
     <soapenv:Body>
@@ -141,8 +140,7 @@ Good Response Message
     </soapenv:Body>
 </soapenv:Envelope>
 ```
-Error Response Message
-```
+``` xml title="Error Response Message"
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Header/>
     <soapenv:Body>
         <rob:FindBusinesByBrNoResponse xmlns:rob="urn:ssm/rob">
@@ -170,7 +168,7 @@ Error Response Message
     </soapenv:Body>
 </soapenv:Envelope>
 ```
-#
+
 ### **Message Header Fields**
 
 <table>
@@ -226,7 +224,6 @@ Error Response Message
 </table>
 
 ---
-#
 
 <table>
     <thead>
@@ -308,10 +305,10 @@ Error Response Message
     </tbody>
 </table>
 
-# 4. HTTP Header - Token Authentication
+## 4. HTTP Header - Token Authentication
 
-A  method  for  a  Service  Requestor  to  provide  a  user  name  and  timestamp  when  making  a  service request to Middleware. When a Service Provider wants to send the server authentication credentials it may use the Authorization field. Authorization field will be put on the Header of request.
-#
+A  method  for  a  Service  Requestor  to  provide  a  user  name  and  timestamp  when  making  a  service request to Middleware. When a Service Provider wants to send the server authentication credentials it may use the Authorization field. Authorization field will be put on the Header of request.<br>
+
 Token Authentication have two step to produce Authorization field.<br>
 **A. The digest is constructed as follows:**<br>
 
@@ -333,6 +330,6 @@ Token Authentication have two step to produce Authorization field.<br>
 ## 4.2 .NET library for generating username token
 #### ![](src/AuthToken.NET.png)
 
-# 5. Transport Protocol - HTTPS
+## 5. Transport Protocol - HTTPS
 
 HTTPS  is  a protocol for secure communication  over  a computer  network which  is  widely  used  on  the Internet.   HTTPS   consists   of   communication   over Hypertext   Transfer   Protocol (HTTP)   within   a   connection encrypted by [Transport Layer Security or its predecessor](https://en.wikipedia.org/wiki/Transport_Layer_Security), Secure Sockets Layer. The main motivation for HTTPS is [authentication](https://en.wikipedia.org/wiki/Authentication) of the  visited website and protection of the privacy and integrity of the exchanged data. [1] 

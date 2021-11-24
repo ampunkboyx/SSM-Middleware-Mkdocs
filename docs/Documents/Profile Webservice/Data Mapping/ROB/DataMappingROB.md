@@ -1,26 +1,11 @@
 # DATA MAPPING ROB
 ## BUSINESS PROFILE
 	Service	getBizProfile
-PDF TEMPLATE	
+PDF TEMPLATE
+
 ## Business Information(ENG)
-Maklumat Perniagaan(Malay)	
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 9px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
+Maklumat Perniagaan(Malay)
+
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
@@ -217,27 +202,25 @@ Maklumat Perniagaan(Malay)
 	</tbody>
 </table>
 
+## Business Type (ENG)
+JENIS PERNIAGAAN(MALAY)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE :</th>
-			<th colspan=2>Business Type (eng)</th>
-			<th colspan=2>JENIS PERNIAGAAN(MALAY)</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>&nbsp;</th>
+			<th>Remarks</th>
+			<th>json Node</th>
+			<th>Object Name</th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>&nbsp;</td>
-			<td>Remarks</td>
-			<td>json Node</td>
-			<td>Object Name</td>
-		</tr>
-		<tr>
 			<td>Business Type</td>
 			<td>JENIS PERNIAGAAN</td>
+			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>description</td>
@@ -245,54 +228,66 @@ Maklumat Perniagaan(Malay)
 		</tr>
 	</tbody>
 </table>
+
+## Branch Information(ENG)
+MAKLUMAT CAWANGAN(MALAY)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>TITLE:</th>
-			<th colspan=2>Branch information(eng)</th>
-			<th colspan=2>MAKLUMAT CAWANGAN(MALAY)</th>
+			<th>Column Name(English)</th>
 			<th>&nbsp;</th>
+			<th>Column Name(MALAY)</th>
+			<th>&nbsp;</th>
+			<th>Remarks</th>
+			<th>&nbsp;</th>
+			<th>json Node</th>
+			<th>&nbsp;</th>
+			<th>Object Name</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>&nbsp;</td>
-			<td>Remarks</td>
-			<td>json Node</td>
-			<td>Object Name</td>
-		</tr>
-		<tr>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
-			<td>No Column name. base on pdf design just List the branch address accordingly. </td>
+			<td>&nbsp;</td>
+			<td>No Column name. base on pdf design just List the branch address accordingly.</td>
+			<td>&nbsp;</td>
 			<td>address1</td>
+			<td>&nbsp;</td>
 			<td>robBranchListInfo</td>
 		</tr>
 		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>town</td>
+			<td>&nbsp;</td>
 			<td>robBranchListInfo</td>
 		</tr>
 		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>postcode</td>
+			<td>&nbsp;</td>
 			<td>robBranchListInfo</td>
 		</tr>
 		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>state</td>
+			<td>&nbsp;</td>
 			<td>robBranchListInfo</td>
 		</tr>
 		<tr>
@@ -300,7 +295,10 @@ Maklumat Perniagaan(Malay)
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
 			<td>status</td>
+			<td>&nbsp;</td>
 			<td>robBranchListInfo</td>
 		</tr>
 	</tbody>

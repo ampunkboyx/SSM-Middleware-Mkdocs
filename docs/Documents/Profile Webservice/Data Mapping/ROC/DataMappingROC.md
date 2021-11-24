@@ -1,22 +1,4 @@
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 8px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
 # DATA MAPPING ROC
-
 
 ## **COMPANY PROFILE**
 
@@ -159,7 +141,7 @@ MAKLUMAT SYARIKAT(Malay)
 				<br> G - BERHAD MENURUT JAMINAN
 				<br> S - BERHAD MENURUT SYER
 				<br> U - TIDAK TERHAD</td>
-			<td>"Base from pdf template : column type is combination of Type :companyType :companyStatus"</td>
+			<td>Base from pdf template : column type is combination of<br><b>Type</b><br>:companyType<br> :companyStatus</td>
 			<td>GetCompProfile</td>
 			<td>companyType</td>
 			<td>rocCompanyInfo</td>
@@ -1495,34 +1477,24 @@ RINGKASAN PENYATA KEWANGAN(Malay)
 	</tbody>
 </table>
 
+#### Summary of Financial Information(BALANCE SHEET ITEMS)
+
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>Summary of Financial Information(BALANCE SHEET ITEMS)</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
+			<th>XML node</th>
+			<th>json Node;</th>
 			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>Sample Data</td>
-			<td>Remarks</td>
-			<td>XML node</td>
-			<td>json Node</td>
-			<td>&nbsp;</td>
-			<td>Sdn Bhd</td>
-			<td>CLBG</td>
-			<td>Foreign</td>
-		</tr>
 		<tr>
 			<td>Non-current assets</td>
 			<td>&nbsp;</td>
@@ -1646,34 +1618,23 @@ RINGKASAN PENYATA KEWANGAN(Malay)
 	</tbody>
 </table>
 
+#### Summary of Financial Information(INCOME STATEMENT ITEMS)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
-			<th>Summary of Financial Information(INCOME STATEMENT ITEMS)</th>
+			<th>Column Name(English)</th>
+			<th>Column Name(MALAY)</th>
+			<th>Sample Data</th>
+			<th>Remarks</th>
 			<th>&nbsp;</th>
+			<th>json Node;</th>
 			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th>Sdn Bhd</th>
+			<th>CLBG</th>
+			<th>Foreign</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Column Name(English)</td>
-			<td>Column Name(MALAY)</td>
-			<td>Sample Data</td>
-			<td>Remarks</td>
-			<td>&nbsp;</td>
-			<td>json Node</td>
-			<td>&nbsp;</td>
-			<td>Sdn Bhd</td>
-			<td>CLBG</td>
-			<td>Foreign</td>
-		</tr>
 		<tr>
 			<td>Total Income</td>
 			<td>&nbsp;</td>

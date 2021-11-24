@@ -12,21 +12,19 @@ In pursuant of ROBA Act 1956, any business conducted in Malaysia must be registe
 
 ## How to write message request
 Mandatory field must be filled as explained below: 
-~~~~~~
+~~~~~~ xml
 <customerId>your agent code</customerId>
 ~~~~~~
 Please put your agent code. 
 
-~~~~~~
+~~~~~~ xml
 <customerReferenceNo>TESTING02</customerReferenceNo>
 ~~~~~~
 
-~~~~~~
 
-~~~~~~
 ## Good Message Request
 This is the sample of a good message request
-~~~~~~
+~~~~~~ xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://integrasistg.ssm.com.my/InfoService/1/WS">
    <soapenv:Header/>
    <soapenv:Body>
@@ -71,7 +69,7 @@ This is the sample of a good message request
 
 ## Good Message Response
 This is the sample of a good message response
-~~~~~~
+~~~~~~ xml
 <soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
    <soapenv:Header/>
    <soapenv:Body>
@@ -224,7 +222,7 @@ This is the sample of a good message response
 Sample ROB number
 * No. ROB = 000008702
 
-~~~~~~
+~~~~~~ xml
 <idCardNumber>5544416</idCardNumber>
 <idCardType>K</idCardType>
 <nationality>MAL</nationality>
@@ -240,7 +238,7 @@ Most of business owner carries only one type of IC, which is new IC number.
 
 Sample Rob Number
 * No. ROB =  TR0215204
-~~~~~~
+~~~~~~ xml
 <dob>1981-10-04T16:30:00.000Z</dob>
 <entryDate>2020-06-29T16:00:00.000Z</entryDate>
 <gender>P</gender>
