@@ -1,5 +1,7 @@
 .md-grid {
     max-width: initial;
+    max-height: initial;
+    text-align: justify;
 }
 
 h4{

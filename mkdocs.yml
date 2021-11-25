@@ -38,7 +38,7 @@ theme:
     - navigation.top
     - toc.integrate
     - content.code.annotate # 
-    
+    - content.tabs.link
 
     favicon: img/favicon.png
     logo: img/logo.png
@@ -69,13 +69,17 @@ plugins:
 markdown_extensions:
     - toc:
         permalink: "#"
+
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
     - attr_list
     - md_in_html
     - pymdownx.highlight
     - pymdownx.inlinehilite
     - pymdownx.snippets
-    - pymdownx.superfences
-         custom_fences:
-            - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
+
+    - pymdownx.tabbed:
+        alternate_style: true 

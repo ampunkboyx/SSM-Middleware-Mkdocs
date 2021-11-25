@@ -10,12 +10,13 @@ SSM Middleware System includes a Middleware gateway for managing agency profiles
 
 [Getting Started](Documents\GettingStarted\GettingStarted.md)
 
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
+=== "Mermaid.js"
+    ``` mermaid
+    graph LR
+    A[Start] --> B{Error?};
+    B -->|Yes| C[Hmm...];
+    C --> D[Debug];
+    D --> B;
+    B ---->|No| E[Yay!];
+    ```
 
