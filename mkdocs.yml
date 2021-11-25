@@ -21,6 +21,7 @@ nav:
             - 'ROB': 'Documents/Profile Webservice/Data Mapping/ROB/DataMappingROB.md'
             - 'ROC': 'Documents/Profile Webservice/Data Mapping/ROC/DataMappingROC.md'
             - 'LLP': 'Documents/Profile Webservice/Data Mapping/LLP/DataMappingLLP.md' 
+        - Error: 'Documents/Profile Webservice/ErrorMessage/ErrorMessage.md'
   - 'Data Schema':
         - 'ROB': 'Documents/Data Schema/DataSchemaROB.md'
         - 'ROC': 'Documents/Data Schema/DataSchemaROC.md'
@@ -50,7 +51,7 @@ theme:
         icon: material/eye-outline
         name: Switch to dark mode 
      - scheme: slate # 
-       primary: white
+       primary: red
        accent: red
        toggle:
         icon: material/eye
@@ -72,5 +73,9 @@ markdown_extensions:
     - md_in_html
     - pymdownx.highlight
     - pymdownx.inlinehilite
-    - pymdownx.superfences
     - pymdownx.snippets
+    - pymdownx.superfences
+         custom_fences:
+            - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format

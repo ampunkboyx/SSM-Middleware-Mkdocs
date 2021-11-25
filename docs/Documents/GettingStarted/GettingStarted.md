@@ -20,8 +20,7 @@ Base64 | A group of similar binary-to-text encoding schemes that represent binar
 ## 2. SSM Middleware
 This  document  describes  the  interface  standard  for  integrating  to  SSM  Middleware.  It  covers  the  transport protocol, web service standard and subscription requirement. As illustrstrated below, there are   few   security   configurations   and   settings   need   to   be implemented   to   ensure   secure   communication between servie requestor and service provider. 
 
-![](src/Figure 1.png){ loading=lazy }
-
+#### ![](src/Figure 1.png)
 
 ## 2.1 What needs to be done for connecting to SSM Middleware
 
@@ -35,7 +34,7 @@ This  document  describes  the  interface  standard  for  integrating  to  SSM  
 ---
 ## 3. Subscription Process
 
-![](src/Figure 2.png)
+#### ![](src/Figure 2.png)
 
 * Each Service Requestor / Agency is required to register an account in SSM Middleware before it can connect to Middleware.
 * Username and password will be sent to Service Requestor via email once the account is created.
@@ -66,11 +65,10 @@ c. Subscription New Service<br>
 ![](src/SubscriptionService.png)<br>
 
 d. Select the service category to subscribe<br>
-![](src/ServiceCatalog.png)
+![](src/ServiceCatalog.png)<br>
 
-e. Once confirm click on the “save” button
-
-![](src/ConfirmationPage.png)
+e. Once confirm click on the “save” button<br>
+![](src/ConfirmationPage.png)<br>
 
 f. After click subscribe button will pending SSM approval to approve it.<br>
 g. Receive email when the service category approved.<br>
@@ -325,10 +323,10 @@ Token Authentication have two step to produce Authorization field.<br>
  3. Authorization: VGVzdGVyfDIwMTYtMDUtMzEgMTE6Mzk6MzV8QUFtc3Y4S05jaGJNWTRHSFZpSU5qcC9CNE9WcmFpRWRVWmNjYW9qcUdoQT0=
 
 ## 4.1 Java library for generating username token 
-#### ![](src/java version dot zip.png)
+![](src/java version dot zip.png)
 
 ## 4.2 .NET library for generating username token
-#### ![](src/AuthToken.NET.png)
+![](src/AuthToken.NET.png)
 
 ## 5. Transport Protocol - HTTPS
 

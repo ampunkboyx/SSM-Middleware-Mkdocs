@@ -1477,7 +1477,7 @@ RINGKASAN PENYATA KEWANGAN(Malay)
 	</tbody>
 </table>
 
-#### Summary of Financial Information(BALANCE SHEET ITEMS)
+### Summary of Financial Information(BALANCE SHEET ITEMS)
 
 <table class="tableizer-table">
 	<thead>
@@ -1618,7 +1618,7 @@ RINGKASAN PENYATA KEWANGAN(Malay)
 	</tbody>
 </table>
 
-#### Summary of Financial Information(INCOME STATEMENT ITEMS)
+### Summary of Financial Information(INCOME STATEMENT ITEMS)
 <table class="tableizer-table">
 	<thead>
 		<tr class="tableizer-firstrow">
