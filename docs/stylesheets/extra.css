@@ -24,3 +24,10 @@ table.tableizer-table {
     margin: 3px;
     border: 1px solid #CCC;
 }
+
+div.col-md-12{
+    background-color: #CCC; 
+    max-height: initial;
+    max-width: 90%;
+    border: 1px solid black;
+}
