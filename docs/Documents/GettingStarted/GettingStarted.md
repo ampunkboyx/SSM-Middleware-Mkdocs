@@ -22,7 +22,7 @@ This  document  describes  the  interface  standard  for  integrating  to  SSM  
 
 #### ![](src/Figure 1.png)
 
-## 2.1 What needs to be done for connecting to SSM Middleware
+### 2.1 What needs to be done for connecting to SSM Middleware
 
 |  |  | Example |
 | ------------ | ------------- | ------------ |
@@ -42,7 +42,7 @@ This  document  describes  the  interface  standard  for  integrating  to  SSM  
 * The service subscription is required approval from SSM. Once the subscription is approved, Service Requestor is able to connect the SSM Middleware as long as the request message compliance to interface message format.
 
 
-## 3.1 Agency Profile
+### 3.1 Agency Profile
 
 a. SSM MBDD need to create an account in Middleware for agency.<br>
 b. Once agency profile is created, a notification email will be sent to the agency.<br>
@@ -53,7 +53,7 @@ d. After that, you can use username and password to login the system.<br>
 e. Once login success will go to landing page.<br>
 ![](src/landingPage.png)
 
-## 3.2 Service Catalog – Service Subscription
+### 3.2 Service Catalog – Service Subscription
 
 a. Login into the  system<br>
 ![](src/login.png)<br>
@@ -74,7 +74,7 @@ f. After click subscribe button will pending SSM approval to approve it.<br>
 g. Receive email when the service category approved.<br>
 ![](src/ApprovedEmail.png)
 
-## 3.3 ENDPOINT URL
+### 3.3 ENDPOINT URL
 You can view the endpoint URLs for your subscribed service catalogs in the integrasi portal. They look similar to the samples below.<br><br>
 Production URL:<br>
 https://integrasi.ssm.com.my/{Service Catalog Name}/{version no}<br><br>
@@ -83,89 +83,92 @@ https://integrasi.ssm.com.my/testing/{Service Catalog Name}/{version no}<br><br>
 Example:<br>
 https://integrasi.ssm.com.my/BusinessService/1
 
-## 3.4 Message Format
+### 3.4 Message Format
 
-``` xml title="Sample Request Message"
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-    <soapenv:Header/>
-    <soapenv:Body>
-        <rob:FindBusinessByBrNo xmlns:rob="urn:ssm/rob">
-            <header>
-            </header>
-                <customerId>AGENCY</customerId>
-                <customerReferenceNo>1234</customerReferenceNo>
-                <customerTransactionDate>2016-08-09T16:00:00.000Z</customerTransactionDate>
-            <request>
-                <brNo>001234567</brNo>
-                <agencyBranchCode>KL</agencyBranchCode>
-            </request>
-        </rob:FindBusinessByBrNo>
-    </soapEnv:Body>
-</soapEnv:Envelope>
-```
-``` xml title="Good Response Message"
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-    <soapenv:Header/>
-    <soapenv:Body>
-        <rob:FindBusinesByBrNoResponse xmlns:rob="urn:ssm/rob">
-            <header>
-                <customerId>AGENCY</customerId>
-                <customerReferenceNo>1234</customerReferenceNo>
-                <customerTransactionDate>2016-08-09T16:00:00.000Z</customerTransactionDate>
-                <serviceCode>CBS00002</serviceCode>
-                <versionNumber>1</versionNumber>
-                <errorCode/>
-                <errorMessage/>
-                <recordCount>1</recordCount>
-                <requestTimestamp>2016-08-09T16:00:00.123Z</requestTimestamp>
-                <responseTimestamp>2016-08-09T16:00:00.567Z</responseTimestamp>
-                <hostReferenceNo/>
-                <hostStatusCode/>
-                <hostStatusMessage/>
-            </header>
-            <request>
-                <brNo>001234567</brNo>
-                <agencyBranchCode>KL</agencyBranchCode>
-            </request>
-            <response>
-                <businessInfoList>
-                    <businessInfo>
-                        <businessName>...</businessName>
-                        ...
-                    </businessInfo>
-            </response>
-        </rob:FindBusinessByBrNoResponse>
-    </soapenv:Body>
-</soapenv:Envelope>
-```
-``` xml title="Error Response Message"
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Header/>
-    <soapenv:Body>
-        <rob:FindBusinesByBrNoResponse xmlns:rob="urn:ssm/rob">
-            <header>
-                <customerId>AGENCY</customerId>
-                <customerReferenceNo>1234</customerReferenceNo>
-                <customerTransactionDate>2016-08-09T16:00:00.000Z</customerTransactionDate>
-                <serviceCode>CBS00002</serviceCode>
-                <versionNumber>1</versionNumber>
-                <errorCode>ESB00002</errorCode>
-                <errorMessage>Host Time-out</errorMessage>
-                <recordCount>0</recordCount>
-                <requestTimestamp>2016-08-09T16:00:00.123Z</requestTimestamp>
-                <responseTimestamp>2016-08-09T16:00:35.567Z</responseTimestamp>
-                <esbHost>mwmbp01.ssm.com.my</esbHost>
-                <hostReferenceNo/>
-                <hostStatusCode/>
-                <hostStatusMessage/>
-            </header>
-            <request>
-                <brNo>001234567</brNo>
-                <agencyBranchCode>KL</agencyBranchCode>
-            </request>
-        </rob:FindBusinessByBrNoResponse>
-    </soapenv:Body>
-</soapenv:Envelope>
-```
+=== "Sample Request Message"
+    ``` xml 
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+        <soapenv:Header/>
+        <soapenv:Body>
+            <rob:FindBusinessByBrNo xmlns:rob="urn:ssm/rob">
+                <header>
+                </header>
+                    <customerId>AGENCY</customerId>
+                    <customerReferenceNo>1234</customerReferenceNo>
+                    <customerTransactionDate>2016-08-09T16:00:00.000Z</customerTransactionDate>
+                <request>
+                    <brNo>001234567</brNo>
+                    <agencyBranchCode>KL</agencyBranchCode>
+                </request>
+            </rob:FindBusinessByBrNo>
+        </soapEnv:Body>
+    </soapEnv:Envelope>
+    ```
+=== "Good Response Message"
+    ``` xml 
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+        <soapenv:Header/>
+        <soapenv:Body>
+            <rob:FindBusinesByBrNoResponse xmlns:rob="urn:ssm/rob">
+                <header>
+                    <customerId>AGENCY</customerId>
+                    <customerReferenceNo>1234</customerReferenceNo>
+                    <customerTransactionDate>2016-08-09T16:00:00.000Z</customerTransactionDate>
+                    <serviceCode>CBS00002</serviceCode>
+                    <versionNumber>1</versionNumber>
+                    <errorCode/>
+                    <errorMessage/>
+                    <recordCount>1</recordCount>
+                    <requestTimestamp>2016-08-09T16:00:00.123Z</requestTimestamp>
+                    <responseTimestamp>2016-08-09T16:00:00.567Z</responseTimestamp>
+                    <hostReferenceNo/>
+                    <hostStatusCode/>
+                    <hostStatusMessage/>
+                </header>
+                <request>
+                    <brNo>001234567</brNo>
+                    <agencyBranchCode>KL</agencyBranchCode>
+                </request>
+                <response>
+                    <businessInfoList>
+                        <businessInfo>
+                            <businessName>...</businessName>
+                            ...
+                        </businessInfo>
+                </response>
+            </rob:FindBusinessByBrNoResponse>
+        </soapenv:Body>
+    </soapenv:Envelope>
+    ```
+=== "Error Response Message"
+    ``` xml
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Header/>
+        <soapenv:Body>
+            <rob:FindBusinesByBrNoResponse xmlns:rob="urn:ssm/rob">
+                <header>
+                    <customerId>AGENCY</customerId>
+                    <customerReferenceNo>1234</customerReferenceNo>
+                    <customerTransactionDate>2016-08-09T16:00:00.000Z</customerTransactionDate>
+                    <serviceCode>CBS00002</serviceCode>
+                    <versionNumber>1</versionNumber>
+                    <errorCode>ESB00002</errorCode>
+                    <errorMessage>Host Time-out</errorMessage>
+                    <recordCount>0</recordCount>
+                    <requestTimestamp>2016-08-09T16:00:00.123Z</requestTimestamp>
+                    <responseTimestamp>2016-08-09T16:00:35.567Z</responseTimestamp>
+                    <esbHost>mwmbp01.ssm.com.my</esbHost>
+                    <hostReferenceNo/>
+                    <hostStatusCode/>
+                    <hostStatusMessage/>
+                </header>
+                <request>
+                    <brNo>001234567</brNo>
+                    <agencyBranchCode>KL</agencyBranchCode>
+                </request>
+            </rob:FindBusinessByBrNoResponse>
+        </soapenv:Body>
+    </soapenv:Envelope>
+    ```
 
 ### **Message Header Fields**
 
@@ -322,10 +325,10 @@ Token Authentication have two step to produce Authorization field.<br>
 
  3. Authorization: VGVzdGVyfDIwMTYtMDUtMzEgMTE6Mzk6MzV8QUFtc3Y4S05jaGJNWTRHSFZpSU5qcC9CNE9WcmFpRWRVWmNjYW9qcUdoQT0=
 
-## 4.1 Java library for generating username token 
+### 4.1 Java library for generating username token 
 ![](src/java version dot zip.png)
 
-## 4.2 .NET library for generating username token
+### 4.2 .NET library for generating username token
 ![](src/AuthToken.NET.png)
 
 ## 5. Transport Protocol - HTTPS

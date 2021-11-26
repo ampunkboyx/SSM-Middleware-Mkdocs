@@ -1,7 +1,7 @@
 site_name: SSM Middleware Doc
 
 nav:
-  - 'Menu' : 
+  - 'Intro' : 
         - 'Introduction' : 'index.md'
         - 'Getting Started': 'Documents/GettingStarted/GettingStarted.md'
         - 'How to call API': 
@@ -29,13 +29,14 @@ nav:
 theme:
     name: material
     font:
-        text: Arial
+        text: Helvetica
     features:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.sections
     - toc.integrate
     - content.code.annotate # 
     - content.tabs.link
@@ -45,14 +46,14 @@ theme:
 
     palette: # 
      - scheme: default
-       primary: teal
-       accent: red
+       primary: light blue
+       accent: yellow
        toggle:
         icon: material/eye-outline
         name: Switch to dark mode 
      - scheme: slate # 
-       primary: red
-       accent: red
+       primary: light blue
+       accent: yellow
        toggle:
         icon: material/eye
         name: Switch to light mode
