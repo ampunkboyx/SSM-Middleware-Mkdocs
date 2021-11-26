@@ -1,12 +1,12 @@
 ## ROB\_NameType
-|               |   |
-| ------------- | - |
-| Trade name    | T |
-| Personal Name | P |
+|       <div style="width:460px"></div>        |   |
+| -------------                                | - |
+| Trade name                                   | T |
+| Personal Name                                | P |
 
 ---
 ## ROB\_Business StatusCode
-| vchcode                  | vchdescription                                             |
+|<div style="width:100px">vchcode</div>|   vchdescription  |
 | ------------------------ | ---------------------------------------------------------- |
 | A                        | ACTIVE                                                     |
 | L                        | EXPIRED                                                    |
@@ -15,7 +15,7 @@
 
 ---
 ## ROB\_StateCode
-| vchcode        | vchdescription      |
+| <div style="width:370px">vchcode</div> | vchdescription      |
 | -------------- | ------------------- |
 | R              | PERLIS              |
 | K              | KEDAH               |
@@ -38,13 +38,13 @@
 
 ---
 ## ROB\_IDColor
-| ROB\_IDColor |
-| ------------ |
-| null         |
+| <div style="width:560px">ROB\_IDColor</div> |
+| ------------                                |
+| null                                        |
 
 ---
 ## ROB\_IDCardType
-|                 |   |          |
+|<div style="width:360px">ROB\_IDCardType</div>|   |          |
 | --------------- | - | -------- |
 | 1               | K | OLD IC   |
 | 2               | P | PASSPORT |
@@ -57,14 +57,14 @@
 
 ---
 ## ROB\_Gender
-| vchcode     | vchdescription |
+|<div style="width:440px">vchcode</div>| vchdescription |
 | ----------- | -------------- |
 | L           | MALE           |
 | P           | FEMALE         |
 
 ---
 ## ROB\_Race
-| vchcode   | vchdescription     |
+|<div style="width:380px">vchcode</div>| vchdescription     |
 | --------- | ------------------ |
 | J         | BAJAU              |
 | Z         | BERAWAN            |
@@ -90,7 +90,7 @@
 
 ---
 ## ROB\_Nationality
-| vchcode          | vchdescription              |
+|<div style="width:330px">vchcode</div>|vchdescription|
 | ---------------- | --------------------------- |
 | ADE              | ADEN                        |
 | AFG              | AFGHANISTAN                 |
@@ -277,14 +277,14 @@
 
 ---
 ## ROB\_BranchStatus
-| chrbranchstatus   | vchdesc     |
+|<div style="width:470px">chrbranchstatus </div>| vchdesc|
 | ----------------- | ----------- |
 | A                 | Aktif       |
 | T                 | Tidak Aktif |
 
 ---
 ## ROB\_Amendmentype
-| vchcode           | vchdescription         |
+|<div style="width:380px">vchcode</div>| vchdescription|
 | ----------------- | ---------------------- |
 | S                 | PARTNERSHIP DISSOLVE   |
 | O                 | COURT ORDER            |
@@ -302,7 +302,7 @@
 
 ---
 ## ROB\_Ownership  
-| vchcode           | vchdescription         |
+|<div style="width:370px">vchcode</div>|vchdescription|
 | ----------------- | ---------------------- |
 | T                 | SOLE PROPRIETORSHIP    |
 | U                 | PARTNERSHIP            |
@@ -319,7 +319,7 @@
 
 ---
 ## ROB Citizenship 
-| Code              | Description            |
+|<div style="width:380px">Code<</div>|Description|
 | ----------------- | ---------------------- |
 | MAL               | MALAYSIAN CITIZEN      |
 | PMR               | PERMANENT RESIDENT     |
@@ -328,7 +328,7 @@
 
 ---
 ## IDcolor
-| Code              | Description            |
+|<div style="width:460px">Code<</div>|Description|
 | ----------------- | ---------------------- |
 | B                 | BLUE                   |
 | M                 | RED                    |

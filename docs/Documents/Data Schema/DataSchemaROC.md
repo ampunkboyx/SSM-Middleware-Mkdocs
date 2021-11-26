@@ -1,5 +1,5 @@
 ## ROC\_StateCode   
-|                |                     |                   
+|<div style="width:380px"></div>                |                     |                   
 | -------------- | ------------------- |
 | vchcode        | vchdescription      |
 | R              | PERLIS              |
@@ -27,7 +27,7 @@
 
 ---
 ## ROC\_OrigionCountry
-|                     |                             |
+| <div style="width:330px"></div>                    |                             |
 | ------------------- | --------------------------- |
 | vchcode             | vchdescription              |
 | ADE                 | ADEN                        |
@@ -222,7 +222,7 @@
 
 ---
 ## ROC\_ID\_Type1 
-|                |                |
+|<div style="width:450px"></div>                 |                |
 | -------------- | -------------- |
 | vchcode        | vchdescription |
 | C              | COMPANY        |
@@ -231,7 +231,7 @@
 
 ---
 ## ROC\_ID\_Type2
-|                | Param Name                                         |
+|<div style="width:150px"></div>| Param Name |
 | -------------- | -------------------------------------------------- |
 | ROC\_ID\_Type2 | ID Type2                                           |
 | vchidtype2code | vchidtype2desc                                     |
@@ -283,7 +283,7 @@
 
 ---
 ## ROC\_Gender 
-|             |                |
+|<div style="width:450px"></div>|                |
 | ----------- | -------------- |
 | vchcode     | vchdescription |
 | M           | MALE           |
@@ -291,7 +291,7 @@
 
 ---
 ## ROC\_CompanyLocality  
-|                                              |                |
+| <div style="width:450px"></div>                                             |                |
 | -------------------------------------------- | -------------- |
 | vchcode                                      | vchdescription |
 | L                                            | LOCAL          |
@@ -300,7 +300,7 @@
 
 ---
 ## financialReportType  
-|                                              |                |
+|                                              |<div style="width:460px"></div>               |
 | -------------------------------------------- | -------------- |          
 | Y                                            | Qualified      |
 | O                                            | UnQualified    |
@@ -308,7 +308,7 @@
 
 ---
 ## ROC\_OfficerDesignation 
-|                         |                        |
+|<div style="width:360px"></div>                         |                        |
 | ----------------------- | ---------------------- |
 | vchcode                 | vchdescription         |
 | Q                       | ALT DIRECTOR           |
@@ -329,7 +329,7 @@
 
 ---
 ## ROC\_ChargesStatus
-|                    |                     |
+|<div style="width:410px"></div>                    |                     |
 | ------------------ | ------------------- |
 | chargesstatus      | desc                |
 | S                  | FULLY SATISFIED     |
@@ -342,7 +342,7 @@
 
 ---
 ## Mortgage Type
-|                    |                     |
+|<div style="width:380px"></div>                    |                     |
 | ------------------ | ------------------- |
 | Code               | Description         |
 | O                  | OPEN TYPE           |
@@ -352,7 +352,7 @@
 
 ---
 ## ROC\_CompanyType
-| ROC\_CompanyType     | OR status of the company               |
+|<div style="width:370px">ROC\_CompanyType</div>| OR status of the company               |
 | -------------------- | -------------------------------------- |
 | vchcode              | vchdescription                         |
 | R                    | PRIVATE LIMITED                        |
@@ -360,7 +360,7 @@
 
 ---
 ## ROC\_CompanyStatus
-| ROC\_CompanyStatus   |                                        |
+|<div style="width:235px">ROC\_CompanyStatus</div>   |                                        |
 | -------------------- | -------------------------------------- |
 | vchcode              | vchdescription                         |
 | E                    | EXISTING                               |
@@ -378,7 +378,7 @@
 
 ---
 ## ROC\_CompanyCategory  
-| ROC\_CompanyCategory |  / companyType in Middleware           |
+|<div style="width:290px">ROC\_CompanyCategory</div>|  / companyType in Middleware           |
 | -------------------- | -------------------------------------- |
 | vchcode              | vchdescription                         |
 | S                    | LIMITED BY SHARES                      |
@@ -388,7 +388,7 @@
 
 ---
 ## ROC\_AmmendNo  
-| ROC\_AmmendNo        |                                        |
+|<div style="width:450px">ROC\_AmmendNo</div>         |                                        |
 | -------------------- | -------------------------------------- |
 | chrammendno          | desc                                   |
 | Amount               | A                                      |
@@ -398,7 +398,7 @@
 ---
 ## ROC\_WindingUpType  
 
-| Code                 | Description                            |
+|<div style="width:415px">Code</div> | Description                            |
 | -------------------- | -------------------------------------- |
 | M                    | MEMBERS                                |
 | O                    | COURT ORDER                            |
@@ -409,7 +409,7 @@
 
 ---
 ## ROC\_SecretaryStatus 
-| ROC\_SecretaryStatus |                                        |
+|<div style="width:340px">ROC\_SecretaryStatus</div>  |                                        |
 | -------------------- | -------------------------------------- |
 | vchcode              | vchdescription                         |
 | P                    | PRELODGED                              |
@@ -431,7 +431,7 @@
 
 ---
 ## ROC\_Race
-| ROC\_Race |                        |
+|<div style="width:355px">ROC\_Race</div>  |                        |
 | --------- | ---------------------- |
 | Code      | Description            |
 | 1         | SABAN                  |
@@ -464,7 +464,7 @@
 
 ---
 ## ROC\_Nationality
-|                  | Param Type                  |
+|<div style="width:320px"></div>                  | Param Type                  |
 | ---------------- | --------------------------- |
 | **ROC\_Nationality** | **Nationality Code**            |
 | vchcode          | vchdescription              |
@@ -675,7 +675,7 @@
 
 ---
 ## Currency
-| Currency |                               |
+| <div style="width:310px">Currency</div>  |                               |
 | -------- | ----------------------------- |
 | **Code  **   | **Description  **                 |
 | BDT      | BANGLADESH TAKA               |
