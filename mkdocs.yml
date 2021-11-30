@@ -17,15 +17,16 @@ nav:
         - 'Sample Report':
             - 'ROB': 'Documents/Profile Webservice/Sample Report/ROB/SampleReportROB.md'
             - 'ROC': 'Documents/Profile Webservice/Sample Report/ROC/SampleReportROC.md'
+            - 'LLP': 'Documents/Profile Webservice/Sample Report/LLP/SampleReportLLP.md' 
         - 'Data Mapping' :
             - 'ROB': 'Documents/Profile Webservice/Data Mapping/ROB/DataMappingROB.md'
             - 'ROC': 'Documents/Profile Webservice/Data Mapping/ROC/DataMappingROC.md'
             - 'LLP': 'Documents/Profile Webservice/Data Mapping/LLP/DataMappingLLP.md' 
-        - Error: 'Documents/Profile Webservice/ErrorMessage/ErrorMessage.md'
+        - Execption Handling: 'Documents/Profile Webservice/ErrorMessage/ErrorMessage.md'
   - 'Data Schema':
         - 'ROB': 'Documents/Data Schema/DataSchemaROB.md'
         - 'ROC': 'Documents/Data Schema/DataSchemaROC.md'
-  - 'Development': 'Documents/Data Schema/testing.md'
+        - 'LLP': 'Documents/Data Schema/DataSchemaLLP.md'
 
 theme:
     name: material

@@ -1,5 +1,3 @@
-This is error that return
-
 # Exception Handling
 
 Appendix A: SOA Error Code List

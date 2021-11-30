@@ -12,7 +12,7 @@ B--no-->C[Create Service Requestor/Agency Profile]
         B--yes-->E[Subscribe Service]
         C-->D[/This is the text in the box/]
         D-->E[Subscribe Service]
-        F--yes-->G[Perform Testing]
+        F--approve-->G[Perform Testing]
         G-->I{Tested Ok?}
         I--re-test-->I
         I-->Z[Production]
