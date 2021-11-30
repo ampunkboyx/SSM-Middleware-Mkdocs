@@ -14,6 +14,7 @@ nav:
         - 'getCompProfile': 'Documents/Profile Webservice/getCompProfile/getCompProfile.md' 
         - 'getBizProfile': 'Documents/Profile Webservice/getBizProfile/getBizProfile.md'
         - 'getNewFormatEntityNo.': 'Documents/Profile Webservice/getNewFormatEntityNo/getNewFormatEntityNo.md'
+        - 'getLlpCurrentProfile ': 'Documents/Profile Webservice/getLlpCurrentProfile/getLlpCurrentProfile.md'
         - 'Sample Report':
             - 'ROB': 'Documents/Profile Webservice/Sample Report/ROB/SampleReportROB.md'
             - 'ROC': 'Documents/Profile Webservice/Sample Report/ROC/SampleReportROC.md'
