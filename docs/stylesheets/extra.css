@@ -18,6 +18,8 @@ table.tableizer-table {
     background-color: #008B8B; 
     color: #FFF;
     font-weight: bold;
+    text-align: center;
+    border: 1px solid #CCC;
 }
 .tableizer-table td {
     padding: 4px; 

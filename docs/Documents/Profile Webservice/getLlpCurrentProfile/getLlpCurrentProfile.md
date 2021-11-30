@@ -2,99 +2,603 @@
 
 ## getLlpCurrentProfile
 
-## How to write message request
-Mandatory field must be filled as explained below: 
-~~~~~~ xml
-<customerId>your agent code</customerId>
-~~~~~~
-Please put your agent code. 
-
-~~~~~~ xml
-<customerReferenceNo>MBDDTest</customerReferenceNo>
-~~~~~~
-
 ## Good Message Request and Respond
 
 === "Good Message Request"
-	```xml
-	<soapenv:Envelope
-		xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-		xmlns:ws="http://integrasi.ssm.com.my/InfoService/1/WS">
-		<soapenv:Header/>
-		<soapenv:Body>
-			<ws:getNewFormatEntityNo>
-				<!--Optional:-->
-				<header>
-					<!--Optional:-->
-					<customerId>MBDD</customerId>
-					<!--Optional:-->
-					<customerReferenceNo>MBDDTest</customerReferenceNo>
-					<!--Optional:-->
-					<customerRequestDate></customerRequestDate>
-				</header>
-				<!--Optional:-->
-				<request>
-					<!--Optional:-->
-					<newFormatEntityNoReq>
-						<!--Optional:-->
-						<agencyId></agencyId>
-						<!--Optional:-->
-						<checkDigit>X</checkDigit>
-						<!--Optional:-->
-						<formatType>OLD</formatType>
-						<!--Optional:-->
-						<regNo>158665</regNo>
-						<!--Optional:-->
-						<tableId></tableId>
-						<!--Optional:-->
-						<type>ROC</type>
-					</newFormatEntityNoReq>
-				</request>
-			</ws:getNewFormatEntityNo>
-		</soapenv:Body>
-	</soapenv:Envelope>
+	```json
+	{
+        "header":{
+        "customerId":"MBDD",
+        "customerReferenceNo":"MBDDtest",
+        "customerRequestDate":"2021-09-02T10:00:00Z"
+        },
+        "request":{
+        "entityNo":"LLP0028160-LGN"
+   	    }
+    }
 	```
 === "Good Message Response"
-	```xml
-	<soapenv:Envelope
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-		<soapenv:Header/>
-		<soapenv:Body>
-			<inf:getNewFormatEntityNoResponse
-				xmlns:inf="http://integrasi.ssm.com.my/InfoService/1/WS"
-				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
-				<header>
-					<customerId>MBDD</customerId>
-					<customerReferenceNo>MBDDTest</customerReferenceNo>
-					<customerRequestDate/>
-					<errorCode/>
-					<errorMessage/>
-					<hostErrorCode/>
-					<hostErrorMessage/>
-					<requestTimestamp>2021-11-24T16:18:27.931</requestTimestamp>
-					<responseTimestamp>2021-11-24T16:18:27.966</responseTimestamp>
-				</header>
-				<request>
-					<newFormatEntityNoReq>
-						<agencyId/>
-						<checkDigit>X</checkDigit>
-						<formatType>OLD</formatType>
-						<regNo>158665</regNo>
-						<tableId/>
-						<type>ROC</type>
-					</newFormatEntityNoReq>
-				</request>
-				<response>
-					<getNewFormatEntityNoReturn>
-						<errorMsg/>
-						<newFormatNo>198601001038</newFormatNo>
-						<oldFormatNo>158665-X</oldFormatNo>
-						<successCode>00</successCode>
-					</getNewFormatEntityNoReturn>
-				</response>
-			</inf:getNewFormatEntityNoResponse>
-		</soapenv:Body>
-	</soapenv:Envelope>
+	```json
+	   {
+          "header":{
+          "customerId":null,
+          "customerReferenceNo":null,
+          "customerRequestDate":null,
+          "requestTimestamp":null,
+          "responseTimestamp":null,
+          "recordCount":null,
+          "errorCode":"00",
+          "errorMessage":null,
+          "hostErrorCode":null,
+          "hostErrorMessage":null,
+          "operationName":null
+        },
+           "request":{
+              "entityNo":"LLP0028160-LGN"
+           },
+           "llpCurrentProfile":{
+              "llpBasicProfile":{
+                 "entityName":"PROPPY CF  PLT",
+                 "entityNo":"LLP0028160-LGN",
+                 "entityNoNewFormat":"202104001531",
+                 "entityStatus":"1",
+                 "entityStatusDt":"2021-05-11T14:34:35.000Z",
+                 "entityStatusDesc":"EXISTING",
+                 "entityType":"1",
+                 "entityTypeDesc":"LOCAL REGISTRATION",
+                 "entityRegDt":"2021-05-11T14:34:35.000Z",
+                 "entityEmail":"",
+                 "entityUpdateDt":"2021-09-27T16:52:48.000Z",
+                 "lastReturnDt":"",
+                 "nextReturnDt":"2022-11-11T00:00:00.000Z",
+                 "dueReturnDt":"2022-11-11T00:00:00.000Z",
+                 "regNatureOfBiz":null,
+                 "oldName":"",
+                 "nameChangeDt":"",
+                 "origin":"MYS",
+                 "originDesc":"MALAYSIA",
+                 "llpConversion":null
+              },
+              "regOfficeAdd":{
+                 "address1":"LOT 3.33, 3.40 & 3.41, 3RD FLOOR",
+                 "address2":"VIVA SHOPPING MALL",
+                 "address3":"NO. 85 JALAN LOKE YEW",
+                 "postcode":"55200",
+                 "city":"KUALA LUMPUR",
+                 "state":"W",
+                 "stateDesc":"W.P KUALA LUMPUR",
+                 "country":"MYS",
+                 "countryDesc":"MALAYSIA",
+                 "principalInd":null,
+                 "principalIndDesc":null
+              },
+              "regBizAddresses":[
+                 {
+                    "address1":"LOT 3.33, 3.40 & 3.41, 3RD FLOOR",
+                    "address2":"VIVA SHOPPING MALL",
+                    "address3":"NO. 85 JALAN LOKE YEW",
+                    "postcode":"55200",
+                    "city":"KUALA LUMPUR",
+                    "state":"W",
+                    "stateDesc":"W.P KUALA LUMPUR",
+                    "country":"MYS",
+                    "countryDesc":"MALAYSIA",
+                    "principalInd":"Y",
+                    "principalIndDesc":"YES"
+                 }
+              ],
+              "involvements":[
+                 {
+                    "involveType":"CO",
+                    "involveTypeDesc":"COMPLIANCE OFFICER",
+                    "involveName":"CHEN FOCK SIONG",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"750602145665",
+                    "involveEffectiveFromDt":"2021-05-11T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"NO 9, JALAN PP 55 SEKS 2",
+                       "address2":"TAMAN PENGGIRAN PUTRA",
+                       "address3":"BANDAR PUTRA PERMAI",
+                       "postcode":"43300",
+                       "city":"SERI KEMBANGAN",
+                       "state":"B",
+                       "stateDesc":"SELANGOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"LEE WILSON",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"720209015023",
+                    "involveEffectiveFromDt":"2021-05-11T07:47:59.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"A1-32-1, MYHABITAT",
+                       "address2":"NO. 3, JALAN AMAN",
+                       "address3":"OFF JALAN TUN RAZAK",
+                       "postcode":"55000",
+                       "city":"KUALA LUMPUR",
+                       "state":"W",
+                       "stateDesc":"W.P KUALA LUMPUR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"LEONG EE MUN, SHARON",
+                    "involveIdType":"05",
+                    "involveIdTypeDesc":"PASSPORT",
+                    "involveId":"K2156533P",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"23 JALAN KIA PENG",
+                       "address2":"AMPERSAND CONDO UMT C-1-3",
+                       "address3":null,
+                       "postcode":"50450",
+                       "city":"KUALA LUMPUR",
+                       "state":"W",
+                       "stateDesc":"W.P KUALA LUMPUR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"CHONG NYOK HOON",
+                    "involveIdType":"05",
+                    "involveIdTypeDesc":"PASSPORT",
+                    "involveId":"S7463104E",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"BLK 249 KIM KEAT LINK",
+                       "address2":"#06-73 310249",
+                       "address3":null,
+                       "postcode":null,
+                       "city":null,
+                       "state":null,
+                       "stateDesc":null,
+                       "country":"SGP",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"TSUN CHIN ENG",
+                    "involveIdType":"05",
+                    "involveIdTypeDesc":"PASSPORT",
+                    "involveId":"S7977504E",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"547A SEGAR ROAD",
+                       "address2":"#14-77 671547",
+                       "address3":null,
+                       "postcode":null,
+                       "city":null,
+                       "state":null,
+                       "stateDesc":null,
+                       "country":"SGP",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"TOH JIA XIN",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"880929045426",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"NO 6 JALAN RIA 1",
+                       "address2":"TAMAN RIA",
+                       "address3":"KAMPUNG JAWA",
+                       "postcode":"85000",
+                       "city":"SEGAMAT",
+                       "state":"J",
+                       "stateDesc":"JOHOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"BOK CHICK SHIM",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"880602566262",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"136 LORONG LASSIM",
+                       "address2":"JALAN HAJI ABDULLAH",
+                       "address3":null,
+                       "postcode":"84000",
+                       "city":"MUAR",
+                       "state":"J",
+                       "stateDesc":"JOHOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"CHEN FOCK SIONG",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"750602145665",
+                    "involveEffectiveFromDt":"2021-05-11T07:47:59.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"NO 9, JALAN PP 55 SEKS 2",
+                       "address2":"TAMAN PENGGIRAN PUTRA",
+                       "address3":"BANDAR PUTRA PERMAI",
+                       "postcode":"43300",
+                       "city":"SERI KEMBANGAN",
+                       "state":"B",
+                       "stateDesc":"SELANGOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"CHONG YEE THENG",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"801020015913",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"NO.32 JALAN JASA 54",
+                       "address2":"TAMAN MUTIARA RINI",
+                       "address3":null,
+                       "postcode":"81300",
+                       "city":"SKUDAI",
+                       "state":"J",
+                       "stateDesc":"JOHOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"WILLIAM MAN MAO WAH",
+                    "involveIdType":"05",
+                    "involveIdTypeDesc":"PASSPORT",
+                    "involveId":"538682847",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"C-LG-2 JALAN BAYU 3",
+                       "address2":"BUKIT GITA BAYU",
+                       "address3":"SERDANG",
+                       "postcode":"43300",
+                       "city":"SERI KEMBANGAN",
+                       "state":"B",
+                       "stateDesc":"SELANGOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"SASHEKUMAR A/L MUNIANDY",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"790523085533",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"B-13-11 BLOCK B PERDANA EXCLUSIVE CONDO",
+                       "address2":"JALAN PJU 8/1 DAMANSARA PERDANA",
+                       "address3":null,
+                       "postcode":"47820",
+                       "city":"PETALING JAYA",
+                       "state":"B",
+                       "stateDesc":"SELANGOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"CHOW KEAN WAI",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"760529065317",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"A-3894 LORONG ALOR AKAR 14",
+                       "address2":"JALAN ALOR AKAR",
+                       "address3":null,
+                       "postcode":"25250",
+                       "city":"KUANTAN",
+                       "state":"C",
+                       "stateDesc":"PAHANG",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"FUNG JUI SENG",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"750309017197",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"282-10 LORONG DATO AHMAD",
+                       "address2":"JALAN KHALIDI",
+                       "address3":null,
+                       "postcode":"84000",
+                       "city":"MUAR",
+                       "state":"J",
+                       "stateDesc":"JOHOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"YAP YIK YEE",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"741108145657",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"6 JALAN CHIN CHIN",
+                       "address2":"OFF LORONG LOKE YEW",
+                       "address3":null,
+                       "postcode":"55200",
+                       "city":"KUALA LUMPUR",
+                       "state":"W",
+                       "stateDesc":"W.P KUALA LUMPUR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"NGOW E-VAN @ EVAN NGOW",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"731121015081",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"1408 JALAN 17/26",
+                       "address2":null,
+                       "address3":null,
+                       "postcode":"46400",
+                       "city":"PETALING JAYA",
+                       "state":"B",
+                       "stateDesc":"SELANGOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"LEE SENG YEOW",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"721007015767",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"B1205 PERDANA VIEW CONDO",
+                       "address2":"NO. 21 JALAN PJU 8/1",
+                       "address3":"BANDAR DAMANSARA PERDANA",
+                       "postcode":"47820",
+                       "city":"PETALING JAYA",
+                       "state":"B",
+                       "stateDesc":"SELANGOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"TAN KIM CHONG",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"720124015315",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"7 JALAN AMAN CERIA 3",
+                       "address2":"BANDAR TROPICANA AMAN",
+                       "address3":null,
+                       "postcode":"42500",
+                       "city":"TELOK PANGLIMA GARANG",
+                       "state":"B",
+                       "stateDesc":"SELANGOR",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 },
+                 {
+                    "involveType":"PT",
+                    "involveTypeDesc":"PARTNER",
+                    "involveName":"NG KIM MOI",
+                    "involveIdType":"01",
+                    "involveIdTypeDesc":"NRIC",
+                    "involveId":"651127055420",
+                    "involveEffectiveFromDt":"2021-07-21T00:00:00.000Z",
+                    "involveEffectiveToDt":"",
+                    "entityNo":"LLP0028160-LGN",
+                    "entityName":null,
+                    "entityNoNewFormat":null,
+                    "entityStatus":null,
+                    "entityStatusDesc":null,
+                    "address":{
+                       "address1":"LOT 4280 TAMAN BUKIT PELANDOK",
+                       "address2":null,
+                       "address3":null,
+                       "postcode":"71960",
+                       "city":"PORT DICKSON",
+                       "state":"N",
+                       "stateDesc":"NEGERI SEMBILAN",
+                       "country":"MYS",
+                       "countryDesc":null,
+                       "principalInd":null,
+                       "principalIndDesc":null
+                    }
+                 }
+              ],
+              "bizCodes":[
+                 {
+                    "entityBizCode":"64200",
+                    "entityBizCodeDesc":"ACTIVITIES OF HOLDING COMPANIES"
+                 }
+              ]
+           }
+        } 
 	```

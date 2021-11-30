@@ -578,6 +578,53 @@
 | ZWE     | ZIMBABWE                                     |
 
 ## principalInd
+not in use
+
+| principalInd |                   |
+| ------------ | ----------------- |
+| code         | <div style="min-width:430px"> code_description</div> |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
+|              |                   |
 
 ## involveType 
+
+| <div style="max-width:185px"> involveType & involveTypeDesc</div> |                                       |
+| ----------------------------- | ------------------------------------- |
+| code                          | code_desccription                     |
+| LW                            | ADVOCATE & SOLICITOR                  |
+| AC                            | ASSOCIATE AND COOPERATIVE             |
+| BO                            | BENEFICIAL OWNER                      |
+| BC                            | BODY CORPORATE                        |
+| CA                            | CHARTERED ACCOUNTANT                  |
+| CS                            | COMPANY SECRETARY / PROFESSIONAL BODY |
+| CO                            | COMPLIANCE OFFICER                    |
+| MS                            | GOVERNMENT OWNED / STATE OWNED        |
+| I                             | INDIVIDUAL                            |
+| LQ                            | LIQUIDATOR                            |
+| OR                            | OFFICIAL RECEIVER                     |
+| O                             | OTHERS                                |
+| PT                            | PARTNER                               |
+| RP                            | REPRESENTATIVE                        |
+
 ## involveIdType
+
+|  <div style="min-width:185px">involveIdType & involveIdTypeDesc</div> |                   |
+| --------------------------------- | ----------------- |
+| code                              | <div style="min-width:270px">code_desccription</div> |
+| 3                                 | ARMY              |
+| 2                                 | IC-OLD            |
+| 1                                 | NRIC              |
+| 5                                 | PASSPORT          |
+| 4                                 | POLIS             |
+| 6                                 | PRIC              |
