@@ -2,10 +2,99 @@
 
 ## getLlpCurrentProfile
 
-## Good Message Request and Respond
+## Message Reference
 
-=== "Good Message Request"
-	```json
+<table class="tableizer-table">
+  <thead>
+    <tr class="tableizer-firstrow">
+      <th>Type</th>
+      <th>Description</th>
+      <th>Mandatory?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JSON message header</td>
+      <td>JSON.Msg.Body.getLlpCurrentProfile.header<br> An information header of the message request.</td>
+      <td>YES </td>
+    </tr>
+    <tr>
+      <td>JSON request body</td>
+      <td>JSON.Msg.Body.getLlpCurrentProfile.request.param<br> An information of request parameter</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>JSON good response body</td>
+      <td>JSON.Msg.Body.getLlpCurrentProfile.response.getLlpCurrentProfileReturn<br> An information of message response</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <td>Host response body</td>
+      <td>JSON.Msg.Body.getLlpCurrentProfileResponse.getLlpCurrentProfileReturn<br> An information of response based on host service</td>
+      <td>YES</td>
+    </tr>
+  </tbody>
+</table>
+
+## Request Message Mapping
+Refer Request Message mapping in Common Header Format
+
+<table class="tableizer-table">
+  <thead>
+    <tr class="tableizer-firstrow">
+      <th>S/N</th>
+      <th>Request Body</th>
+      <th>Description </th>
+      <th>Type</th>
+      <th>Length</th>
+      <th>Req?</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>&nbsp;</td>
+      <td>Customer Id</td>
+      <td>An information of customer Id</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>&nbsp;</td>
+      <td>Customer Reference No</td>
+      <td>An information of customer reference number </td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>&nbsp;</td>
+      <td>Customer Request Date</td>
+      <td>An information that customer request date</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>&nbsp;</td>
+      <td>Entity No</td>
+      <td>An information of LLP entity number</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+## Sample Request Message
+Web Service - SOAP Request Message
+
+```json
 	{
         "header":{
         "customerId":"MBDD",
@@ -16,9 +105,477 @@
         "entityNo":"LLP0028160-LGN"
    	    }
     }
-	```
-=== "Good Message Response"
-	```json
+```
+
+## Response Message mapping (Good Response)
+Refer Response Message mapping in Common Header Format.
+##### Response mapping Header
+<table class="tableizer-table">
+  <thead>
+    <tr class="tableizer-firstrow">
+      <th>S/N</th>
+      <th>Response Body (header)</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Length</th>
+      <th>Req?</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>&nbsp;</td>
+      <td>Customer Id</td>
+      <td>An information of customer identification Id</td>
+      <td>String</td>
+      <td></td>
+      <td rowspan="11"></td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>&nbsp;</td>
+      <td>Customer Reference No</td>
+      <td>An information of customer reference number</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>&nbsp;</td>
+      <td>Customer Request Date</td>
+      <td>An information that customer request date</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>&nbsp;</td>
+      <td>Request Timestamp</td>
+      <td>An information of customer's LLP request timestamp </td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>&nbsp;</td>
+      <td>Response Timestamp</td>
+      <td>An information of customer's LLP response timestamp</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>&nbsp;</td>
+      <td>Record Count</td>
+      <td>An information of LLP record count within its service</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>&nbsp;</td>
+      <td>Error Code</td>
+      <td>An information if LLP details has error</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>&nbsp;</td>
+      <td>Error Message</td>
+      <td>An information if LLP's details has error message</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>&nbsp;</td>
+      <td>Host Error Code</td>
+      <td>An information if LLP's details has host error code</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>&nbsp;</td>
+      <td>Host Error Message</td>
+      <td>An information if LLP's details has host error message</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>&nbsp;</td>
+      <td>Operation Name</td>
+      <td>An information if LLP has operation name</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Response mapping Body (request)
+
+<table class="tableizer-table">
+  <thead>
+    <tr class="tableizer-firstrow">
+      <th>S/N</th>
+      <th>Response Body (request)</th>
+      <th>Description </th>
+      <th>Type</th>
+      <th>Length</th>
+      <th>Req?</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>&nbsp;</td>
+      <td>Entity No</td>
+      <td>An information of company entity number</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>&nbsp;</td>
+      <td>Llp Current Profile</td>
+      <td>An information of LLP current profile</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>&nbsp;</td>
+      <td>Llp Basic Profile</td>
+      <td>An information of LLP basic profile</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>&nbsp;</td>
+      <td>Entity Name</td>
+      <td>An information of company name</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>&nbsp;</td>
+      <td>Entity No New Format</td>
+      <td>An information of new format of company entity number</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>&nbsp;</td>
+      <td>Entity Status</td>
+      <td>An information of company status</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>&nbsp;</td>
+      <td>Entity Status Dt</td>
+      <td>An information of company status date</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>&nbsp;</td>
+      <td>Entity Status Desc</td>
+      <td>An information of company status description</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>&nbsp;</td>
+      <td>Entity Type</td>
+      <td>An information of company type</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>&nbsp;</td>
+      <td>Entity Type Desc</td>
+      <td>An information of company type description</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>&nbsp;</td>
+      <td>Entity Reg Dt</td>
+      <td>An information of company registration date</td>
+      <td> String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>&nbsp;</td>
+      <td>Entity Email</td>
+      <td>An information of company's email</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>&nbsp;</td>
+      <td>Entity Update Dt</td>
+      <td>An information of company update date (backend use)</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>&nbsp;</td>
+      <td>Last Return Dt</td>
+      <td>An information of company last return date </td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>&nbsp;</td>
+      <td>Next Return Dt</td>
+      <td>An information of company next return date </td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>&nbsp;</td>
+      <td>Due Return Dt</td>
+      <td>An information of company due return date</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>17.</td>
+      <td>&nbsp;</td>
+      <td>Reg Nature Of Biz</td>
+      <td>An information of register of identity company business</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>&nbsp;</td>
+      <td>Old Name</td>
+      <td>An information of company old name</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>19.</td>
+      <td>&nbsp;</td>
+      <td>Name Change Dt</td>
+      <td>An information of company changing name date</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>20.</td>
+      <td>&nbsp;</td>
+      <td>Origin</td>
+      <td>An information of company origin location</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>21.</td>
+      <td>&nbsp;</td>
+      <td>Origin Desc</td>
+      <td>An information of company origin location description </td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>22.</td>
+      <td>&nbsp;</td>
+      <td>Llp Conversion</td>
+      <td>An information of LLP conversion statement (backend use)</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Response mapping Body (reqBizAddress) 
+
+<table class="tableizer-table">
+  <thead>
+    <tr class="tableizer-firstrow">
+      <th>S/N</th>
+      <th>Response Body (regBizAddresses)</th>
+      <th>Description </th>
+      <th>Type</th>
+      <th>Length</th>
+      <th>Req?</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>&nbsp;</td>
+      <td>Address 1</td>
+      <td>An information of company address</td>
+      <td>String</td>
+      <td></td>
+      <td rowspan="11"></td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>&nbsp;</td>
+      <td>Address 2</td>
+      <td>An information of company address </td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>&nbsp;</td>
+      <td>Address 3</td>
+      <td>An information of company address</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>&nbsp;</td>
+      <td>Postcode</td>
+      <td>An information of company postcode location</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>&nbsp;</td>
+      <td>City</td>
+      <td>An information of city of company</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>&nbsp;</td>
+      <td>State</td>
+      <td>An information of company state (backend use)</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>&nbsp;</td>
+      <td>State Desc</td>
+      <td>An information of company state description</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>&nbsp;</td>
+      <td>Country</td>
+      <td>An information of company country (backend use)</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>&nbsp;</td>
+      <td>Country Desc</td>
+      <td>An information of company country description print as Malaysia</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>&nbsp;</td>
+      <td>PrincipalInd</td>
+      <td>&nbsp;</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>&nbsp;</td>
+      <td>PrincipalInd Desc</td>
+      <td>&nbsp;</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Response mapping Body (bizCodes) 
+
+<table class="tableizer-table">
+  <thead>
+    <tr class="tableizer-firstrow">
+      <th>S/N</th>
+      <th>Response Body (bizCodes)</th>
+      <th>Description </th>
+      <th>Type</th>
+      <th>Length</th>
+      <th>Req?</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>&nbsp;</td>
+      <td>Entity Biz Code</td>
+      <td>An information of company business code</td>
+      <td>String</td>
+      <td></td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>&nbsp;</td>
+      <td>Entity Biz Code Desc</td>
+      <td>An information of company business code description</td>
+      <td>String</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+## Sample Good Response Message 
+Web Service - SOAP Response Message
+```json
 	   {
           "header":{
           "customerId":null,
@@ -601,4 +1158,4 @@
               ]
            }
         } 
-	```
+```
