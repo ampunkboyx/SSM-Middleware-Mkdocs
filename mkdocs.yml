@@ -2,32 +2,32 @@ site_name: SSM Middleware Doc
 
 nav:
   - 'Intro' : 
-        - 'Introduction' : 'index.md'
-        - 'Getting Started': 'Documents/GettingStarted/GettingStarted.md'
-        - 'How to call API': 
+        - '<i>Introduction</i>' : 'index.md'
+        - '<i>Getting Started</i>': 'Documents/GettingStarted/GettingStarted.md'
+        - '<i>How to call API</i>': 
             - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
             - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
   - 'Profile Webservice': 
-        - 'getInfoProfile': 
+        - '<i>getInfoProfile</i>': 
             - 'ROCINFO': 'Documents/Profile Webservice/getInfoProfile/getInfoProfileROC.md'
             - 'ROBINFO': 'Documents/Profile Webservice/getInfoProfile/getInfoProfileROB.md'
-        - 'getCompProfile': 'Documents/Profile Webservice/getCompProfile/getCompProfile.md' 
-        - 'getBizProfile': 'Documents/Profile Webservice/getBizProfile/getBizProfile.md'
-        - 'getNewFormatEntityNo.': 'Documents/Profile Webservice/getNewFormatEntityNo/getNewFormatEntityNo.md'
-        - 'getLlpCurrentProfile ': 'Documents/Profile Webservice/getLlpCurrentProfile/getLlpCurrentProfile.md'
-        - 'Sample Report':
+        - '<i>getCompProfile</i>': 'Documents/Profile Webservice/getCompProfile/getCompProfile.md' 
+        - '<i>getBizProfile</i>': 'Documents/Profile Webservice/getBizProfile/getBizProfile.md'
+        - '<i>getNewFormatEntityNo.</i>': 'Documents/Profile Webservice/getNewFormatEntityNo/getNewFormatEntityNo.md'
+        - '<i>getLlpCurrentProfile</i> ': 'Documents/Profile Webservice/getLlpCurrentProfile/getLlpCurrentProfile.md'
+        - '<i>Sample Report</i>':
             - 'ROB': 'Documents/Profile Webservice/Sample Report/ROB/SampleReportROB.md'
             - 'ROC': 'Documents/Profile Webservice/Sample Report/ROC/SampleReportROC.md'
             - 'LLP': 'Documents/Profile Webservice/Sample Report/LLP/SampleReportLLP.md' 
-        - 'Data Mapping' :
+        - '<i>Data Mapping</i>' :
             - 'ROB': 'Documents/Profile Webservice/Data Mapping/ROB/DataMappingROB.md'
             - 'ROC': 'Documents/Profile Webservice/Data Mapping/ROC/DataMappingROC.md'
-            - 'LLP': 'Documents/Profile Webservice/Data Mapping/LLP/DataMappingLLP.md' 
-        - Execption Handling: 'Documents/Profile Webservice/ErrorMessage/ErrorMessage.md'
+            - 'LLP': 'Documents/Profile Webservice/Data Mapping/LLP/DataMappingLLP.md'   
+        - '<i>Execption Handling</i>': 'Documents/Profile Webservice/ErrorMessage/ErrorMessage.md'
   - 'Data Schema':
-        - 'ROB': 'Documents/Data Schema/DataSchemaROB.md'
-        - 'ROC': 'Documents/Data Schema/DataSchemaROC.md'
-        - 'LLP': 'Documents/Data Schema/DataSchemaLLP.md'
+        - '<i>ROB</i>': 'Documents/Data Schema/DataSchemaROB.md'
+        - '<i>ROC</i>': 'Documents/Data Schema/DataSchemaROC.md'
+        - '<i>LLP</i>': 'Documents/Data Schema/DataSchemaLLP.md'
 
 theme:
     name: material
@@ -40,7 +40,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     # - navigation.sections
-    - toc.integrate
+    # - toc.integrate
     - content.code.annotate # 
     - content.tabs.link
 
