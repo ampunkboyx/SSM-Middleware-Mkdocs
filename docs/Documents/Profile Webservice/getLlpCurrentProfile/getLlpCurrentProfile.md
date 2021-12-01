@@ -92,7 +92,7 @@ Refer Request Message mapping in Common Header Format
 </table>
 
 ## Sample Request Message
-Web Service - SOAP Request Message
+Web Service - REST Request Message
 
 ```json
 	{
@@ -574,7 +574,7 @@ Refer Response Message mapping in Common Header Format.
 </table>
 
 ## Sample Good Response Message 
-Web Service - SOAP Response Message
+Web Service - REST Response Message
 ```json
 	   {
           "header":{
