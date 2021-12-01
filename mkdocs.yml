@@ -4,9 +4,7 @@ nav:
   - 'Intro' : 
         - '<i>Introduction</i>' : 'index.md'
         - '<i>Getting Started</i>': 'Documents/GettingStarted/GettingStarted.md'
-        - '<i>How to call API</i>': 
-            - 'Token Authentication': 'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
-            - 'WSDL File': 'Documents/How To Call API/WSDL File/WSDL_File.md'
+        - '<i>How to call API</i>':  'Documents/How To Call API/Token Authentication/tokenAuthentication.md'
   - 'Profile Webservice': 
         - '<i>getInfoProfile</i>': 
             - 'ROCINFO': 'Documents/Profile Webservice/getInfoProfile/getInfoProfileROC.md'
@@ -24,6 +22,7 @@ nav:
             - 'ROC': 'Documents/Profile Webservice/Data Mapping/ROC/DataMappingROC.md'
             - 'LLP': 'Documents/Profile Webservice/Data Mapping/LLP/DataMappingLLP.md'   
         - '<i>Execption Handling</i>': 'Documents/Profile Webservice/ErrorMessage/ErrorMessage.md'
+        - '<i>WSDL File</i>': 'Documents/Profile Webservice/WSDL File/WSDL_File.md'
   - 'Data Schema':
         - '<i>ROB</i>': 'Documents/Data Schema/DataSchemaROB.md'
         - '<i>ROC</i>': 'Documents/Data Schema/DataSchemaROC.md'
