@@ -48,13 +48,11 @@ theme:
 
     palette: # 
      - scheme: default
-       primary: light blue
        accent: yellow
        toggle:
         icon: material/eye-outline
         name: Switch to dark mode 
      - scheme: slate # 
-       primary: light blue
        accent: yellow
        toggle:
         icon: material/eye

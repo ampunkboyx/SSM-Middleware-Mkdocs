@@ -33,3 +33,10 @@ div.col-md-12{
     max-width: 90%;
     border: 1px solid black;
 }
+
+:root {
+    --md-primary-fg-color:        #3361FF;
+    --md-primary-fg-color--light: #3361FF;
+    --md-primary-fg-color--dark:  #3361FF;
+}
+  
