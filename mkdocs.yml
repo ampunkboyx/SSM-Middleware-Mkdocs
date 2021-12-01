@@ -43,8 +43,8 @@ theme:
     - content.code.annotate # 
     - content.tabs.link
 
-    favicon: img/favicon.png
-    logo: img/logo.png
+    favicon: img/Icon-01_white-01.png
+    logo: img/Icon-01_white-01.png
 
     palette: # 
      - scheme: default
