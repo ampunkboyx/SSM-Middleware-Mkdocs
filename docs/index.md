@@ -9,3 +9,5 @@ SSM Middleware System includes a Middleware gateway for managing agency profiles
 <br><br>
 
 [Getting Started](Documents\GettingStarted\GettingStarted.md)
+
+[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
