@@ -69,6 +69,7 @@ plugins:
     - search
 
 markdown_extensions:
+    - footnotes
     - toc:
         permalink: "#"
     - attr_list
