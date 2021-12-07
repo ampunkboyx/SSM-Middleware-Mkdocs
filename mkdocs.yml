@@ -13,7 +13,10 @@ nav:
         - '<i>getBizProfile</i>': 'Documents/Profile Webservice/getBizProfile/getBizProfile.md'
         - '<i>getNewFormatEntityNo.</i>': 'Documents/Profile Webservice/getNewFormatEntityNo/getNewFormatEntityNo.md'
         - '<i>getLlpCurrentProfile</i> ': 'Documents/Profile Webservice/getLlpCurrentProfile/getLlpCurrentProfile.md'
-        - '<i>Sample Report</i>': 'Documents/Profile Webservice/Sample Report/SampleReport.md'
+        - '<i>Sample Report</i>': 
+            - 'ROB': 'Documents/Profile Webservice/Sample Report/LLP/ReportROB.md'
+            - 'ROC': 'Documents/Profile Webservice/Sample Report/LLP/ReportROC.md'
+            - 'LLP': 'Documents/Profile Webservice/Sample Report/LLP/ReportLLP.md'
         - '<i>Data Mapping</i>' :
             - 'ROB': 'Documents/Profile Webservice/Data Mapping/ROB/DataMappingROB.md'
             - 'ROC': 'Documents/Profile Webservice/Data Mapping/ROC/DataMappingROC.md'
