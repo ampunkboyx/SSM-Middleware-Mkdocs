@@ -1,4 +1,6 @@
-# getCompProfile Request Respond, Data Mapping, and Issues
+# getCompProfile
+
+## getCompProfile Request Respond, Data Mapping, and Issues
 
 ## How to write message Request
 Mandatory field must be filled as explained below: 

@@ -1,11 +1,6 @@
----
-tags: [Intermediate]
-title: 'ROB Request Respond, Data Mapping, and Issues'
-created: '2021-07-12T04:07:34.750Z'
-modified: '2021-07-14T02:55:28.720Z'
----
+# getInfoProfile ROB
 
-# ROB Request Respond, Data Mapping, and Issues
+## ROB Request Respond, Data Mapping, and Issues
 
 ## getBizProfile & getInfoProfile
 In pursuant of ROBA Act 1956, any business conducted in Malaysia must be registered. The APIs provide the information about registration of business entity in Malaysia. 

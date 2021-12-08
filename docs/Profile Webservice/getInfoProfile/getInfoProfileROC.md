@@ -1,6 +1,6 @@
-# ROC Request Respond, Data Mapping, and Issues
+# getInfoProfile ROC
 
-## getInfoProfile
+## ROC Request Respond, Data Mapping, and Issues
 
 ## How to write message request
 Mandatory field must be filled as explained below: 
