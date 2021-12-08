@@ -1,6 +1,10 @@
 site_name: SSM Middleware Documentation
 
 nav:
+    - Intro:
+        - index.md
+        - Getting Started.md
+        - How To Call API/Token Authentication.md
     - ...
 
 # nav:
@@ -31,7 +35,6 @@ nav:
 #         - '<i>ROC</i>': 'Documents/Data Schema/DataSchemaROC.md'
 #         - '<i>LLP</i>': 'Documents/Data Schema/DataSchemaLLP.md'  
 
-order: desc
 theme:
     name: material
     font:
