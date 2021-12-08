@@ -2,7 +2,7 @@ site_name: SSM Middleware Documentation
 
 nav:
     - Intro:
-        - index.md
+        - Introduction: index.md
         - Getting Started.md
         - How To Call API/Token Authentication.md
     - ...
@@ -74,7 +74,9 @@ extra_javascript:
 
 plugins:
     - search
-    - awesome-pages
+    - awesome-pages:
+        collapse_single_pages: true
+        strict: false
 
 markdown_extensions:
     - footnotes
