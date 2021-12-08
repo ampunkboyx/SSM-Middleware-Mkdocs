@@ -1,8 +1,6 @@
 # getLlpCurrentProfile
 
-# Limited Liability Partnership Request Respond, Data Mapping, and Issues
-
-## getLlpCurrentProfile
+## Limited Liability Partnership Request Respond, Data Mapping, and Issues
 
 ## Message Reference
 

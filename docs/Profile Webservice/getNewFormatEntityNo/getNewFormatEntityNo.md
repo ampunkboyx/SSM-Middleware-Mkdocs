@@ -1,8 +1,6 @@
 # getNewFormatEntityNo
 
-# New Format Entity Number Request Respond, Data Mapping, and Issues
-
-## getNewFormatEntityNo.
+## New Format Entity Number Request Respond, Data Mapping, and Issues
 
 ## How to write message request
 Mandatory field must be filled as explained below: 
