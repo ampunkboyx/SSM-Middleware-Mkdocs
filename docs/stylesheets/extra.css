@@ -15,7 +15,7 @@ table.tableizer-table {
     font-family: Arial, Helvetica, sans-serif;
 } 
 .tableizer-table th {
-    background-image: linear-gradient(to left, #ffff00 0%, #cc9900 100%);
+    background-color: #C4B500;
     color: #FFF;
     font-weight: bold;
     text-align: center;
